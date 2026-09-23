@@ -8,33 +8,51 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            Hi Everyone, I am <span className="purple">Raj Kumar</span> from{" "}
+            <span className="purple">Mohali, Punjab, India</span>.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            I am currently working as an{" "}
+            <span className="purple">Associate Software Engineer</span> at{" "}
+            <span className="purple">Luminoguru Pvt Ltd</span>, specializing in
+            building robust full-stack web and mobile applications.
+            <br />
+            <br />
+            I hold a{" "}
+            <span className="purple">
+              Master of Computer Applications (MCA)
+            </span>{" "}
+            from Maharaja Ranjeet Singh Punjab Technical University (Grade A)
+            and a{" "}
+            <span className="purple">
+              Bachelor of Computer Applications (BCA)
+            </span>{" "}
+            from Panjab University.
+            <br />
+            <br />
+            My technical focus encompasses architecting scalable systems with
+            React, React Native, NestJS, TypeScript, Python, Shopify ecosystem,
+            and cutting-edge AI product development.
+            <br />
+            <br />
+            Apart from coding, some other activities that I love to do:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Exploring &amp; Experimenting with AI Tools
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Developing Mobile Apps &amp; Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Contributing to Open Source Codebases
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ color: "rgb(155 126 172)", marginTop: "20px" }}>
+            "Driven by curiosity, powered by code — building solutions that create real impact."{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Raj Kumar</footer>
         </blockquote>
       </Card.Body>
     </Card>
