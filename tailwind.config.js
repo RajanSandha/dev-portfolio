@@ -8,35 +8,35 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#030712',
-        surface: '#0b0f19',
-        card: '#0f172a',
-        accent: {
+        obsidian: '#050508',
+        charcoal: '#0b0c12',
+        graphite: '#13141e',
+        surface: '#181926',
+        primary: {
+          50: '#f4f6fd',
+          100: '#e8ecfb',
+          200: '#d5ddf8',
+          300: '#b4c3f3',
+          400: '#8ba0ec',
+          500: '#687ee3',
+          600: '#4f5fd7',
           DEFAULT: '#6366f1',
-          hover: '#4f46e5',
-          glow: 'rgba(99, 102, 241, 0.4)',
         },
-        cyan: {
-          DEFAULT: '#06b6d4',
-          glow: 'rgba(6, 182, 212, 0.4)',
-        },
-        emerald: {
-          DEFAULT: '#10b981',
-          glow: 'rgba(16, 185, 129, 0.4)',
-        }
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+        display: ['Syne', 'sans-serif'],
+        heading: ['Space Grotesk', 'Plus Jakarta Sans', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
       },
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'float': 'float 6s ease-in-out infinite',
+        'float-slow': 'float 8s ease-in-out infinite',
       },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
+          '50%': { transform: 'translateY(-12px)' },
         }
       }
     },

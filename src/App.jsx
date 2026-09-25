@@ -1,37 +1,40 @@
 import React from 'react';
-import Navbar from './components/Navbar.jsx';
-import Hero from './components/Hero.jsx';
-import TelemetryBanner from './components/TelemetryBanner.jsx';
-import ArchitectureSection from './components/ArchitectureSection.jsx';
-import ProjectsBento from './components/ProjectsBento.jsx';
-import ResumeSection from './components/ResumeSection.jsx';
-import Footer from './components/Footer.jsx';
+import SmoothScroll from './components/SmoothScroll';
+import CursorGlow from './components/CursorGlow';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import ProjectsShowcase from './components/ProjectsShowcase';
+import ArchitectureSection from './components/ArchitectureSection';
+import ExperienceTimeline from './components/ExperienceTimeline';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#030712] text-slate-100 font-sans selection:bg-indigo-500/30 selection:text-indigo-200">
-      {/* Fixed Navigation */}
-      <Navbar />
+    <SmoothScroll>
+      <div className="min-h-screen bg-[#050508] text-zinc-100 font-sans selection:bg-white/20 selection:text-white relative">
+        {/* Subtle Interactive Ambient Glow */}
+        <CursorGlow />
 
-      <main>
-        {/* 3D Interactive Hero Section */}
-        <Hero />
+        {/* Floating Minimalist Header */}
+        <Navbar />
 
-        {/* Real-Time Telemetry Bar */}
-        <TelemetryBanner />
+        <main>
+          {/* Editorial Display Hero */}
+          <Hero />
 
-        {/* Architectural Pillars (AS2/EDI, Distributed Queues, AI Pipelines, Gov Protocols) */}
-        <ArchitectureSection />
+          {/* Cinematic Flagship Projects (5 Key Systems + 13 Archive Systems) */}
+          <ProjectsShowcase />
 
-        {/* Interactive Engineering Systems Bento (5 Flagship + 13 Production Systems) */}
-        <ProjectsBento />
+          {/* Technical Domains & Architecture Pillars */}
+          <ArchitectureSection />
 
-        {/* Executive Profile & Resume (8+ Years Experience, 5 Featured Highlights, ATS PDF) */}
-        <ResumeSection />
-      </main>
+          {/* 8+ Years Experience Timeline */}
+          <ExperienceTimeline />
+        </main>
 
-      {/* Terminal Contact Footer */}
-      <Footer />
-    </div>
+        {/* High-Impact Editorial Contact Footer */}
+        <Footer />
+      </div>
+    </SmoothScroll>
   );
 }
