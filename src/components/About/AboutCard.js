@@ -12,10 +12,9 @@ function AboutCard() {
             <span className="purple">Mohali, Punjab, India</span>.
             <br />
             <br />
-            I am currently working as an{" "}
-            <span className="purple">Associate Software Engineer</span> at{" "}
-            <span className="purple">Luminoguru Pvt Ltd</span>, specializing in
-            building robust full-stack web and mobile applications.
+            I have <span className="purple">8+ years of experience</span> as a{" "}
+            <span className="purple">Lead Backend Engineer &amp; Systems Architect</span>,
+            currently engineering distributed platforms at <span className="purple">Luminoguru Pvt Ltd</span>.
             <br />
             <br />
             I hold a{" "}
@@ -30,27 +29,22 @@ function AboutCard() {
             from Panjab University.
             <br />
             <br />
-            My technical focus encompasses architecting scalable systems with
-            React, React Native, NestJS, TypeScript, Python, Shopify ecosystem,
-            and cutting-edge AI product development.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do:
+            My primary architectural focus centers on:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Exploring &amp; Experimenting with AI Tools
+              <ImPointRight /> Distributed Microservices &amp; Async Queue Pipelines (Python/FastAPI, NestJS)
             </li>
             <li className="about-activity">
-              <ImPointRight /> Developing Mobile Apps &amp; Games
+              <ImPointRight /> Enterprise Protocols &amp; Integrations (X12 EDI, AS2 Cryptography, Xero, PRODA/CCS)
             </li>
             <li className="about-activity">
-              <ImPointRight /> Contributing to Open Source Codebases
+              <ImPointRight /> Provider-Agnostic Generative AI &amp; Vision Pipelines (Gemini, ComfyUI, OpenCV)
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)", marginTop: "20px" }}>
-            "Driven by curiosity, powered by code — building solutions that create real impact."{" "}
+            "Designing systems built for extreme reliability, throughput, and scale."{" "}
           </p>
           <footer className="blockquote-footer">Raj Kumar</footer>
         </blockquote>

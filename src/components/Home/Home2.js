@@ -17,32 +17,29 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              With years of hands-on experience building production-grade
-              applications, I've developed a deep passion for solving real-world
-              problems through code.
+              With <b>8+ years</b> of engineering experience, I specialize in architecting
+              resilient distributed backends, asynchronous messaging pipelines, and scalable enterprise platforms.
               <br />
-              <br />I specialize in
+              <br />I primarily engineer in
               <i>
-                <b className="purple"> JavaScript, TypeScript, and Python </b>
+                <b className="purple"> Python (FastAPI, AsyncIO), TypeScript, Node.js (NestJS), and SQL </b>
               </i>
-              and work across the full stack — from crafting intuitive user
-              interfaces to architecting scalable backend systems.
+              with a laser focus on high-throughput services, transactional integrity, and low-latency APIs.
               <br />
               <br />
-              My expertise spans
+              My core domains of expertise span
               <i>
-                <b className="purple"> Web & Mobile Application Development </b>
+                <b className="purple"> Enterprise Middleware, Cryptographic Protocols (AS2 &amp; X12 EDI), </b>
               </i>
-              using modern frameworks like
+              multi-tenant cloud architectures, and real-time event systems with
               <i>
-                <b className="purple"> React, React Native, and NestJS.</b>
+                <b className="purple"> Socket.IO, Redis, and BullMQ/ARQ queues.</b>
               </i>
               <br />
               <br />
-              I'm also deeply invested in building
-              <b className="purple"> AI-powered products</b> — from
-              intelligent image processing pipelines to multi-language
-              voice cloning and virtual try-on systems.
+              I also build production-grade
+              <b className="purple"> Generative AI &amp; Vision Pipelines</b> — including
+              provider-agnostic model orchestration (Gemini, ComfyUI, Decart) and automated vectorization engines.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
