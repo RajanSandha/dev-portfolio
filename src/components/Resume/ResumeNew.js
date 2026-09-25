@@ -64,7 +64,7 @@ function ResumeNew() {
                       margin: "0 0 8px 0",
                     }}
                   >
-                    Full Stack Developer &amp; AI Product Builder
+                    Lead Full Stack Engineer &amp; Systems Architect
                   </p>
                   <p
                     style={{
@@ -112,7 +112,7 @@ function ResumeNew() {
                 <div style={{ marginBottom: "22px" }}>
                   <h2 style={sectionTitle}>PROFESSIONAL SUMMARY</h2>
                   <p style={{ fontSize: "0.95em", color: "#333", margin: 0, textAlign: "justify" }}>
-                    Versatile and results-driven <strong>Full Stack Developer</strong> with 6+ years of comprehensive experience architecting, developing, and deploying robust web, mobile, and AI-powered solutions. Specialized in <strong>React, React Native, NestJS, TypeScript, Python, and Node.js</strong>, alongside extensive e-commerce development with <strong>Shopify (Liquid &amp; Custom Apps)</strong>. Proven track record delivering mission-critical applications across childcare management (accredited with Australian government CCS/PRODA compliance and Stripe AU BECS billing), fintech, social networking with real-time WebSockets, and modern generative AI workflows (voice cloning, image-to-stencil conversion, and AI virtual try-on pipelines).
+                    High-impact <strong>Lead Full Stack &amp; Systems Engineer</strong> with 6+ years of specialized experience architecting and scaling enterprise distributed backends, compliance platforms, and modern web/mobile applications. Proficient in <strong>TypeScript, Python, Node.js, NestJS, FastAPI, and React</strong>, with proven expertise building mission-critical integrations: Australian Government <strong>PRODA/CCS compliance</strong>, multi-tenant <strong>X12 EDI &amp; AS2 cryptographic transports</strong>, <strong>Stripe Connect/BECS Direct Debit billing</strong>, real-time <strong>Socket.IO</strong> clusters, and <strong>OpenAI/LLM-powered candidate matching pipelines</strong>.
                   </p>
                 </div>
 
@@ -130,49 +130,49 @@ function ResumeNew() {
                       <tr>
                         <td style={skillLabel}>Languages:</td>
                         <td style={skillValue}>
-                          JavaScript (ES6+), TypeScript, Python, PHP, Dart, Java, SQL, HTML5, CSS3
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={skillLabel}>Frontend:</td>
-                        <td style={skillValue}>
-                          React.js, Next.js, React Native (iOS &amp; Android), Vue.js, Vite, Tailwind CSS, shadcn/ui, Bootstrap
+                          TypeScript, JavaScript (ES6+), Python 3.12, PHP, Dart, Java, SQL, HTML5/CSS3
                         </td>
                       </tr>
                       <tr>
                         <td style={skillLabel}>Backend &amp; APIs:</td>
                         <td style={skillValue}>
-                          NestJS, Node.js, Express.js, Laravel, CodeIgniter, RESTful APIs, WebSockets, GraphQL
+                          NestJS 11, FastAPI (Async), Node.js, AdonisJS v6, Express.js, Laravel, REST APIs, WebSockets, Socket.IO
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style={skillLabel}>Frontend &amp; Mobile:</td>
+                        <td style={skillValue}>
+                          React 18, Vite, Next.js, React Native (iOS &amp; Android), TanStack Query, Tailwind CSS, shadcn/ui, Bootstrap
                         </td>
                       </tr>
                       <tr>
                         <td style={skillLabel}>AI &amp; Data:</td>
                         <td style={skillValue}>
-                          Python AI Pipelines, Image Processing, K-Means Clustering, Voice Cloning, NLP, Gemini API, ComfyUI
+                          OpenAI SDK, Prompt Engineering, Document Extraction (pdf-parse/mammoth), Computer Vision (OpenCV, K-Means)
                         </td>
                       </tr>
                       <tr>
-                        <td style={skillLabel}>Databases:</td>
+                        <td style={skillLabel}>Protocols:</td>
                         <td style={skillValue}>
-                          PostgreSQL, MongoDB, MySQL, Firebase Firestore / Realtime DB, TypeORM, Mongoose
+                          X12 EDI (850, 945, 944, 810, 997, 855), AS2 (OpenSSL CMS Encrypt/Sign, MDN), SFTP, S3/SQS
                         </td>
                       </tr>
                       <tr>
-                        <td style={skillLabel}>E-Commerce:</td>
+                        <td style={skillLabel}>Databases &amp; Queues:</td>
                         <td style={skillValue}>
-                          Shopify (Liquid Theme Development, Custom Snippets, App Integrations, Checkout), WooCommerce
+                          PostgreSQL (asyncpg/Neon), MySQL, MongoDB/Mongoose, Redis 7, BullMQ, ARQ, TypeORM, Drizzle, SQLAlchemy 2.0
                         </td>
                       </tr>
                       <tr>
                         <td style={skillLabel}>Integrations:</td>
                         <td style={skillValue}>
-                          Stripe (Connect, BECS Direct Debit, ADH), OAuth 2.0, JWT &amp; MFA, PRODA/CCS, Mapbox API, Alpaca API
+                          Stripe (Connect Express, BECS Direct Debit, Billing), PRODA/CCS Gov API, Xero Payroll, Mapbox GL
                         </td>
                       </tr>
                       <tr>
-                        <td style={skillLabel}>DevOps &amp; Tools:</td>
+                        <td style={skillLabel}>DevOps &amp; Security:</td>
                         <td style={skillValue}>
-                          Git, GitHub Actions, Docker, Vercel, AWS, Postman, Swagger, Jira, Figma, Linux
+                          Docker, Docker Compose, AWS (S3, SQS, Secrets Manager), Azure Blob, JWT + OAuth2 rotation, TOTP 2FA, Git
                         </td>
                       </tr>
                     </tbody>
@@ -186,16 +186,15 @@ function ResumeNew() {
                   {/* Luminoguru */}
                   <div style={{ marginBottom: "14px" }}>
                     <div style={projectHeader}>
-                      <strong>Associate Software Engineer / Full Stack Developer — Luminoguru Pvt Ltd</strong>
+                      <strong>Associate Software Engineer / Lead Full Stack Engineer — Luminoguru Pvt Ltd</strong>
                       <span style={projectDate}>2020 – Present | Mohali, India</span>
                     </div>
                     <ul style={bulletList}>
-                      <li>Architect and engineer full-stack web and cross-platform mobile systems utilizing React, React Native, NestJS, TypeScript, and Node.js.</li>
-                      <li>Lead technical delivery of enterprise childcare management system (TGA) handling complex Australian government child care subsidy (CCS/ACCS) integrations via PRODA cryptographic tokens.</li>
-                      <li>Engineered automated recurring billing pipelines integrating Stripe AU BECS Direct Debit and real-time webhook reconciliation.</li>
-                      <li>Developed cross-platform mobile application (TGAMesh) for staff attendance and shifts with geolocation tracking and real-time WebSocket messaging.</li>
-                      <li>Developed custom Shopify themes, storefront customizations with Liquid, and tailored third-party integrations for high-growth e-commerce brands.</li>
-                      <li>Designed and implemented AI-powered production features including image processing pipelines, voice cloning workflows, and AI try-on engines.</li>
+                      <li>Architect and engineer full-stack platforms, high-throughput asynchronous backend services, and scalable web/mobile applications.</li>
+                      <li>Engineered the flagship TGA childcare compliance engine (56 entities, 34 controllers) interfacing with Australian Government PRODA cryptographic auth and automated Stripe AU BECS recurring billing.</li>
+                      <li>Built enterprise multi-tenant X12 EDI middleware in Python 3.12/FastAPI handling AS2 encrypted communications, idempotent deduplication, and ERP sync.</li>
+                      <li>Designed and implemented full-stack AI recruitment platform (Talent Bridge) integrating OpenAI SDK for automated candidate scoring and resume parsing.</li>
+                      <li>Spearheaded real-time architectures with Socket.IO and BullMQ, handling high-frequency chats, live location maps, and workforce event scheduling.</li>
                     </ul>
                   </div>
 
@@ -206,9 +205,8 @@ function ResumeNew() {
                       <span style={projectDate}>2019 – 2020 | Chandigarh, India</span>
                     </div>
                     <ul style={bulletList}>
-                      <li>Built and maintained scalable database-driven web platforms using PHP, CodeIgniter, Laravel, and MySQL following OOP standards.</li>
-                      <li>Explored and integrated Node.js and MongoDB micro-modules to optimize real-time data handling and backend throughput.</li>
-                      <li>Collaborated with cross-functional teams to translate UI/UX designs into fully responsive, cross-browser compatible client interfaces.</li>
+                      <li>Developed scalable database-driven web platforms using PHP, CodeIgniter, Laravel, and MySQL following strict OOP patterns.</li>
+                      <li>Engineered RESTful APIs, optimized complex relational queries, and introduced Node.js/MongoDB micro-modules for real-time throughput.</li>
                     </ul>
                   </div>
 
@@ -219,105 +217,95 @@ function ResumeNew() {
                       <span style={projectDate}>2017 – 2019 | Mohali, India</span>
                     </div>
                     <ul style={bulletList}>
-                      <li>Honed foundational full-stack capabilities, developing native Android modules with Java, XML, and RESTful API consumption.</li>
-                      <li>Contributed to dynamic web portal development with PHP, JavaScript, HTML5, CSS3, and relational database schema design.</li>
+                      <li>Developed native Android applications using Java, XML, and SQLite, implementing responsive UI components and background sync.</li>
+                      <li>Collaborated on dynamic web portal development utilizing PHP, JavaScript, HTML5, CSS3, and relational database schema design.</li>
                     </ul>
                   </div>
                 </div>
 
-                {/* Key Projects */}
+                {/* 4 High Profile Projects */}
                 <div style={{ marginBottom: "22px" }}>
-                  <h2 style={sectionTitle}>FEATURED PROJECTS &amp; AI PRODUCTS</h2>
+                  <h2 style={sectionTitle}>HIGH-PROFILE FEATURED PROJECTS (4 FLAGSHIP SYSTEMS)</h2>
 
                   <div style={{ marginBottom: "12px" }}>
                     <div style={projectHeader}>
-                      <strong>TheCroveAcademy (TGA) — Enterprise Childcare Management</strong>
+                      <strong>1. TGA Grove Academy — Childcare Operations &amp; Government CCS Compliance</strong>
                       <span style={projectLink}>
                         <a href="https://tga.edu.au/" target="_blank" rel="noreferrer" style={{ color: "#6c63ff", textDecoration: "none" }}>
                           tga.edu.au ↗
                         </a>
                       </span>
                     </div>
-                    <p style={projectTech}>React · TypeScript · Vite · Tailwind · NestJS · PostgreSQL · Stripe AU BECS · PRODA/CCS</p>
+                    <p style={projectTech}>TypeScript · NestJS 11 · PostgreSQL · TypeORM · React 18 · Vite · Tailwind · PRODA/CCS · Stripe BECS · Puppeteer</p>
                     <ul style={bulletList}>
-                      <li>Childcare centre operations platform with parent/child records, attendance kiosk, Australian government ACCS/CCS subsidy claiming via PRODA tokens, and automated Stripe BECS direct-debit billing.</li>
+                      <li>Architected enterprise childcare management system (500+ files, 34 controllers, 56 entities) with role-scoped staff/parent portals and kiosk PIN attendance.</li>
+                      <li>Engineered end-to-end Australian CCS compliance pipeline via PRODA device auth/cryptographic key rotation, automated session-reporting state machine (INIT/VARY/NOCHG/NOCARE), and audit trails.</li>
+                      <li>Implemented automated direct-debit billing using Stripe AU BECS with webhook idempotency, retry scheduling, and automated PDF invoice generation via Puppeteer.</li>
                     </ul>
                   </div>
 
                   <div style={{ marginBottom: "12px" }}>
                     <div style={projectHeader}>
-                      <strong>TGAMesh — Mobile Workforce Management App</strong>
-                      <span style={projectLink}>
-                        <a href="https://play.google.com/store/apps/details?id=mesh.tga.edu.au" target="_blank" rel="noreferrer" style={{ color: "#6c63ff", textDecoration: "none" }}>
-                          Google Play ↗
-                        </a>
-                      </span>
+                      <strong>2. EDI Middleware — Multi-Tenant X12 Transport &amp; ERP Integration</strong>
+                      <span style={projectDate}>Production Enterprise System</span>
                     </div>
-                    <p style={projectTech}>React Native (iOS/Android) · NestJS · WebSockets · Geolocation</p>
+                    <p style={projectTech}>Python 3.12 · FastAPI (Async) · PostgreSQL 16 · SQLAlchemy 2.0 · Redis 7 · ARQ Workers · AS2 (OpenSSL CMS) · pyx12 · AWS SQS/S3</p>
                     <ul style={bulletList}>
-                      <li>Cross-platform mobile app for staff shift scheduling, attendance with GPS fencing, leave requests, real-time WebSocket chats, stories, posts, and polls.</li>
+                      <li>Designed async multi-tenant X12 pipeline processing inbound 850/945/944/810 documents and generating outbound 997/855/940 acknowledgments with status tracking.</li>
+                      <li>Implemented production AS2 transport: OpenSSL CMS signing/encryption, partner certificate store, sync/async MDN handling, and integrated live warehouse partner (Solvira).</li>
+                      <li>Engineered resilient ingestion engine with Redis + ARQ workers, PostgreSQL audit trail with control-number deduplication (409 handling), and swappable REST ERP adapter (Icicle Foods).</li>
                     </ul>
                   </div>
 
                   <div style={{ marginBottom: "12px" }}>
                     <div style={projectHeader}>
-                      <strong>StenGen (TattooStencils) — AI Stencil Generator</strong>
-                      <span style={projectLink}>
-                        <a href="https://stengen.com/" target="_blank" rel="noreferrer" style={{ color: "#6c63ff", textDecoration: "none" }}>
-                          stengen.com ↗
-                        </a>
-                      </span>
+                      <strong>3. Talent Bridge — AI-Powered Recruitment &amp; Candidate Matching Platform</strong>
+                      <span style={projectDate}>Full-Stack AI Monorepo</span>
                     </div>
-                    <p style={projectTech}>NestJS · Python · K-Means Clustering · OpenCV · SVG Generation</p>
+                    <p style={projectTech}>TypeScript · NestJS 11 · PostgreSQL · TypeORM · Drizzle ORM · OpenAI SDK · Redis · BullMQ · React 18 · Vite · TanStack Query · Stripe</p>
                     <ul style={bulletList}>
-                      <li>AI service converting photographic artwork into print-ready tattoo stencils via a Python image processing pipeline and automated vector SVG generation.</li>
+                      <li>Built full-stack AI recruitment platform: automated resume extraction (PDF/DOCX), OpenAI-powered scoring, and asynchronous candidate-job matching via BullMQ worker queues.</li>
+                      <li>Shipped multi-role architecture (Admin, Recruiter, Enterprise) with Stripe subscription tiers, checkout sessions, team invitations, and comprehensive Recharts analytics.</li>
+                      <li>Engineered responsive 3-portal SPA with TanStack Query caching, form validations (RHF + Zod), inline PDF resume viewing, and AWS S3 presigned asset storage.</li>
                     </ul>
                   </div>
 
                   <div style={{ marginBottom: "12px" }}>
                     <div style={projectHeader}>
-                      <strong>Globetrottr — Social Travel Map &amp; Real-Time Messenger</strong>
+                      <strong>4. Globetrottr — Travel Social Network &amp; Real-Time Messaging Platform</strong>
                       <span style={projectLink}>
                         <a href="https://globetrottrapi.lusites.xyz/swagger" target="_blank" rel="noreferrer" style={{ color: "#6c63ff", textDecoration: "none" }}>
                           API Docs ↗
                         </a>
                       </span>
                     </div>
-                    <p style={projectTech}>Mapbox GL · React · Node.js · Real-Time Translation API · Swagger</p>
+                    <p style={projectTech}>TypeScript · NestJS 11 · MongoDB · Mongoose 8 · Redis · BullMQ · Socket.IO · Mapbox GL · Elasticsearch · Typesense · AWS S3 · Stripe</p>
                     <ul style={bulletList}>
-                      <li>Travel social network with Mapbox tracking, digital passport stamps, feeds, and real-time chat with instant multi-language translation.</li>
+                      <li>Architected large-scale social backend (~338 TS files, 29 controllers, 60 services) powering social travel feeds, stories, country passport tracking, and dynamic Mapbox clustering.</li>
+                      <li>Built high-concurrency real-time messaging gateway using Socket.IO with typing indicators, presence tracking, media sharing via AWS S3, and Google Cloud automated translation.</li>
+                      <li>Integrated Tiqets Distributor API for travel event discovery, business accounts with QR redemption, and Stripe subscriptions.</li>
                     </ul>
                   </div>
+                </div>
 
-                  <div style={{ marginBottom: "12px" }}>
-                    <div style={projectHeader}>
-                      <strong>VillageVest — FinTech Investment Platform for Minors</strong>
-                      <span style={projectLink}>
-                        <a href="https://villagevest.com/" target="_blank" rel="noreferrer" style={{ color: "#6c63ff", textDecoration: "none" }}>
-                          villagevest.com ↗
-                        </a>
-                      </span>
-                    </div>
-                    <p style={projectTech}>React · Node.js · Stripe ADH · OAuth 2.0 · Alpaca API</p>
-                    <ul style={bulletList}>
-                      <li>Custodial investment and micro-funding platform enabling financial gifting for minors with Stripe ADH bank linking and Alpaca investment APIs.</li>
-                    </ul>
-                  </div>
-
-                  <div style={{ marginBottom: "12px" }}>
-                    <div style={projectHeader}>
-                      <strong>Boldify — High-Volume Shopify Storefront</strong>
-                      <span style={projectLink}>
-                        <a href="https://getboldify.com/" target="_blank" rel="noreferrer" style={{ color: "#6c63ff", textDecoration: "none" }}>
-                          getboldify.com ↗
-                        </a>
-                      </span>
-                    </div>
-                    <p style={projectTech}>Shopify · Liquid · Theme Customization · App Integrations</p>
-                    <ul style={bulletList}>
-                      <li>Engineered custom Liquid theme snippets, high-converting product pages, and third-party merchant integrations.</li>
-                    </ul>
-                  </div>
+                {/* Additional Notable Projects with Portfolio Link */}
+                <div style={{ marginBottom: "22px" }}>
+                  <h2 style={sectionTitle}>ADDITIONAL PRODUCTION PROJECTS</h2>
+                  <p style={{ fontSize: "0.92em", color: "#6c63ff", fontStyle: "italic", marginBottom: "8px" }}>
+                    Detailed architecture, technical specifications, and demos for 15+ production systems viewable on portfolio:{" "}
+                    <a href="https://rajansandha.github.io/dev-portfolio" target="_blank" rel="noreferrer" style={{ fontWeight: "700", color: "#6c63ff", textDecoration: "underline" }}>
+                      rajansandha.github.io/dev-portfolio ↗
+                    </a>
+                  </p>
+                  <ul style={bulletList}>
+                    <li><strong>Givicle:</strong> Full-stack CSR employee-giving platform with double-entry contribution ledger, payroll deductions, and statement exports. <em>(AdonisJS v6, React 18, MySQL, Redis, BullMQ, Azure Blob, S3)</em></li>
+                    <li><strong>BarChase API:</strong> Nightlife discovery platform with Mapbox geo-filtering, crowd status tracking, Stripe sponsorships, and push notifications. <em>(NestJS 11, MySQL, TypeORM, Stripe, Firebase)</em></li>
+                    <li><strong>TGA-Mesh:</strong> Childcare workforce ops platform with shift rostering, timesheet aggregation, Xero payroll sync, and GPS attendance. <em>(React Native, NestJS, MongoDB, Socket.IO, Xero API)</em></li>
+                    <li><strong>Village Vest:</strong> Community group-funding escrow platform with Stripe Connect Express onboarding, OFAC compliance screening, and SMS OTP. <em>(NestJS 11, React 18, Stripe Connect, Twilio)</em></li>
+                    <li><strong>StenGen:</strong> AI image-to-stencil conversion pipeline utilizing K-Means clustering and automated vector SVG generation. <em>(Python, OpenCV, NestJS, SVG Engine)</em></li>
+                    <li><strong>Boldify:</strong> High-volume Shopify brand storefront engineered with custom modular Liquid snippet architecture. <em>(Shopify Liquid, App Integrations)</em></li>
+                    <li><strong>Mobile &amp; AI Labs:</strong> Published mobile applications (ChessRoyal Game on Google Play) and active generative AI experiments (FashionTryOn virtual fitting room &amp; ContentCreationAI voice cloning).</li>
+                  </ul>
                 </div>
 
                 {/* Education */}
@@ -343,29 +331,6 @@ function ResumeNew() {
                       Panjab University, Chandigarh, India
                     </p>
                   </div>
-                </div>
-
-                {/* Additional Highlights */}
-                <div>
-                  <h2 style={sectionTitle}>ADDITIONAL HIGHLIGHTS</h2>
-                  <ul style={{ ...bulletList, marginBottom: 0 }}>
-                    <li>
-                      <strong>Open Source Repositories:</strong>{" "}
-                      <a href="https://github.com/RajanSandha/compilecraftcode" target="_blank" rel="noreferrer" style={{ color: "#6c63ff", textDecoration: "none" }}>
-                        CompileCraftCode
-                      </a>
-                      ,{" "}
-                      <a href="https://github.com/RajanSandha/nanonomad" target="_blank" rel="noreferrer" style={{ color: "#6c63ff", textDecoration: "none" }}>
-                        NanoNomad
-                      </a>
-                    </li>
-                    <li>
-                      <strong>Mobile Apps on Google Play:</strong> ChessRoyal Game, TGAMesh
-                    </li>
-                    <li>
-                      <strong>Spoken Languages:</strong> English (Professional), Hindi (Fluent), Punjabi (Native)
-                    </li>
-                  </ul>
                 </div>
               </div>
 
@@ -463,7 +428,7 @@ const skillLabel = {
   padding: "3px 12px 3px 0",
   verticalAlign: "top",
   whiteSpace: "nowrap",
-  width: "130px",
+  width: "140px",
 };
 
 const skillValue = {

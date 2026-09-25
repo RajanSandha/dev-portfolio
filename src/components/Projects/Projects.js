@@ -12,47 +12,103 @@ function Projects() {
           Featured <strong className="purple">Projects &amp; Products </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Production systems, mobile applications, and AI products I've engineered and shipped.
+          Enterprise platforms, AI systems, mobile applications, and distributed backends I've engineered and shipped.
         </p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {/* 1. TheCroveAcademy */}
+          {/* 1. TGA Grove Academy */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
-              title="TheCroveAcademy (TGA)"
+              title="TGA Grove Academy"
               status="Live"
-              description="Comprehensive childcare centre management platform for staff and parents. Features parent & child records, attendance with kiosk mode, Australian government subsidy (ACCS/CCS) integration via PRODA tokens, and automated recurring billing with Stripe AU BECS Direct Debit."
-              tags={["React", "TypeScript", "NestJS", "PostgreSQL", "Stripe AU BECS", "Tailwind", "PRODA/CCS"]}
+              description="Enterprise childcare platform for Australian centres (~505 TS files, 34 controllers, 56 entities). Features parent/child management, kiosk PIN attendance with authorized pickup verification, Australian government ACCS/CCS subsidy claiming via PRODA cryptographic tokens, and automated recurring billing with Stripe AU BECS Direct Debit."
+              tags={["NestJS 11", "TypeScript", "PostgreSQL", "React 18", "PRODA/CCS", "Stripe BECS", "Puppeteer", "Tailwind"]}
               demoLink="https://tga.edu.au/"
             />
           </Col>
 
-          {/* 2. TGAMesh */}
+          {/* 2. EDI Middleware */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
-              title="TGAMesh"
-              status="Published"
-              description="Workforce management mobile app for iOS and Android. Features staff authentication, shifts, leave & attendance tracking with GPS geolocation fencing, real-time messaging via WebSockets, team stories, status feeds, and interactive polls."
-              tags={["React Native", "NestJS", "WebSockets", "Geolocation", "Mobile App"]}
-              playStoreLink="https://play.google.com/store/apps/details?id=mesh.tga.edu.au&hl=en"
+              title="EDI Middleware (X12)"
+              status="Live"
+              description="Async multi-tenant X12 EDI middleware in Python 3.12/FastAPI. Ingests inbound X12 850/945/944/810 and generates outbound 997/855/940. Implements production AS2 transport with OpenSSL CMS encryption/signing, partner certificate store, sync/async MDN, Redis + ARQ workers, and swappable REST ERP adapter (Icicle Foods)."
+              tags={["Python 3.12", "FastAPI", "PostgreSQL", "Redis 7", "ARQ", "AS2 Crypto", "X12 EDI", "AWS S3/SQS"]}
             />
           </Col>
 
-          {/* 3. Globetrottr */}
+          {/* 3. Talent Bridge */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              isBlog={false}
+              title="Talent Bridge"
+              status="Live"
+              description="Full-stack AI recruitment platform (~237 TS files, 26 controllers). Features resume ingestion/parsing (PDF/DOCX via pdf-parse/mammoth), OpenAI-powered candidate-job scoring pipeline via BullMQ workers, Stripe subscription billing, and a 3-portal React SPA (Admin, Recruiter, Enterprise) with Recharts analytics."
+              tags={["NestJS 11", "OpenAI SDK", "PostgreSQL", "React 18", "BullMQ", "Redis", "Stripe", "TanStack Query"]}
+            />
+          </Col>
+
+          {/* 4. Globetrottr */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
               title="Globetrottr"
               status="Live"
-              description="Interactive social travel and location discovery platform powered by Mapbox GL. Includes digital passport stamp tracking, friends feed, stories, real-time messenger with automated message translation, and business dashboards for location management and QR voucher redemption."
-              tags={["Mapbox GL", "React", "Node.js", "WebSockets", "Translation API", "Swagger"]}
+              description="Large-scale travel-social platform (~338 TS files, 29 controllers, 60 services). Features dynamic Mapbox GL tracking, passport stamp collections, real-time messaging using Socket.IO with multi-language automated translation, event discovery via Tiqets API, and Stripe business subscriptions."
+              tags={["NestJS 11", "MongoDB", "Socket.IO", "Mapbox GL", "Redis", "BullMQ", "Elasticsearch", "Stripe"]}
               demoLink="https://globetrottrapi.lusites.xyz/swagger"
             />
           </Col>
 
-          {/* 4. StenGen (TattooStencils) */}
+          {/* 5. Givicle */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              isBlog={false}
+              title="Givicle"
+              status="Live"
+              description="Full-stack CSR employee-giving platform (~142 backend files). Features an employee payroll-deduction ledger, organisation top-up pools, brand voucher marketplace, social thanks wall with reactions, TOTP 2FA, PDF/Excel statement exports, and a 3-portal React SPA with TanStack Query and shadcn UI."
+              tags={["AdonisJS v6", "Node 22", "React 18", "MySQL", "BullMQ", "Redis", "Azure Blob", "AWS S3", "Tailwind"]}
+            />
+          </Col>
+
+          {/* 6. BarChase API */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              isBlog={false}
+              title="BarChase API"
+              status="Live"
+              description="Modular nightlife discovery backend (18 controllers, 28 services, 25 entities). Implements geo-aware bar discovery with Mapbox, live crowd status submissions, user check-ins/reviews, multi-provider social auth (Google/Apple/Facebook), and Stripe subscription/sponsorship billing."
+              tags={["NestJS 11", "TypeScript", "MySQL", "TypeORM", "Mapbox", "Stripe", "Firebase Push", "Swagger"]}
+            />
+          </Col>
+
+          {/* 7. TGAMesh */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              isBlog={false}
+              title="TGAMesh"
+              status="Published"
+              description="Workforce operations platform (~371 TS files) and mobile app for childcare centres. Features shift rostering, leave management, timesheet worker aggregation, Xero payroll sync with encrypted credentials, Socket.IO messaging, and staff geolocation attendance."
+              tags={["React Native", "NestJS 11", "MongoDB", "Socket.IO", "Xero API", "BullMQ", "Geolocation"]}
+              playStoreLink="https://play.google.com/store/apps/details?id=mesh.tga.edu.au&hl=en"
+            />
+          </Col>
+
+          {/* 8. Village Vest */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              isBlog={false}
+              title="Village Vest"
+              status="Live"
+              description="Community group-funding platform ('Village Pots'). Implements Stripe Connect Express escrow funding, member contributions, interactive polls with quorum calculation, social feed, Twilio SMS OTP, and automated OFAC sanctions compliance screening."
+              tags={["React 18", "NestJS 11", "Stripe Connect", "PostgreSQL", "Twilio", "OFAC Compliance", "FinTech"]}
+              demoLink="https://villagevest.com/"
+            />
+          </Col>
+
+          {/* 9. StenGen (TattooStencils) */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
@@ -64,19 +120,7 @@ function Projects() {
             />
           </Col>
 
-          {/* 5. VillageVest */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              isBlog={false}
-              title="VillageVest"
-              status="Live"
-              description="FinTech investment and micro-funding platform designed for minors. Implements secure multi-channel onboarding (OAuth 2.0, phone, email), social contribution links for family gifting, Stripe ADH bank linking, and investment account integrations via Alpaca API."
-              tags={["React", "Node.js", "Stripe ADH", "OAuth 2.0", "Alpaca API", "FinTech"]}
-              demoLink="https://villagevest.com/"
-            />
-          </Col>
-
-          {/* 6. Boldify */}
+          {/* 10. Boldify */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
@@ -88,7 +132,7 @@ function Projects() {
             />
           </Col>
 
-          {/* 7. ContentCreationAI */}
+          {/* 11. ContentCreationAI */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
@@ -99,7 +143,7 @@ function Projects() {
             />
           </Col>
 
-          {/* 8. FashionTryOn */}
+          {/* 12. FashionTryOn */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
@@ -110,7 +154,7 @@ function Projects() {
             />
           </Col>
 
-          {/* 9. ChessRoyal Game */}
+          {/* 13. ChessRoyal Game */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
@@ -122,7 +166,7 @@ function Projects() {
             />
           </Col>
 
-          {/* 10. WishStory */}
+          {/* 14. WishStory */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
@@ -134,7 +178,7 @@ function Projects() {
             />
           </Col>
 
-          {/* 11. Pelmen */}
+          {/* 15. Pelmen */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
@@ -145,7 +189,7 @@ function Projects() {
             />
           </Col>
 
-          {/* 12. CompileCraftCode */}
+          {/* 16. CompileCraftCode */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
@@ -157,7 +201,7 @@ function Projects() {
             />
           </Col>
 
-          {/* 13. NanoNomad */}
+          {/* 17. NanoNomad */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
@@ -169,18 +213,7 @@ function Projects() {
             />
           </Col>
 
-          {/* 14. TalentBridge */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              isBlog={false}
-              title="TalentBridge"
-              status="Concept"
-              description="Modern career and talent discovery marketplace concept. Designed with role-matching filters, developer portfolio showcases, applicant tracking pipelines, and recruiter analytics dashboards."
-              tags={["UI/UX Design", "Talent Platform", "Dashboard", "Recruitment Tech"]}
-            />
-          </Col>
-
-          {/* 15. Upittson */}
+          {/* 18. Upittson */}
           <Col md={4} className="project-card">
             <ProjectCard
               isBlog={false}
