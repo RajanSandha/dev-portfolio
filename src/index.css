@@ -1,8 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-body {
-  margin: 0;
-  font-family: "Raleway", serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#030712] text-slate-100 font-sans selection:bg-indigo-500/30 selection:text-indigo-200;
+  }
+}
+
+/* Custom Glassmorphism & Cybernetic Accents */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(15, 23, 42, 0.85);
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+  transform: translateY(-2px);
+}
+
+.cyber-glow {
+  text-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+}
+
+.cyan-glow {
+  text-shadow: 0 0 20px rgba(6, 182, 212, 0.6);
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
 }
