@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/dev-portfolio/static/css/main.f952b268.css",
-    "main.js": "/dev-portfolio/static/js/main.fdf748eb.js",
+    "main.js": "/dev-portfolio/static/js/main.289dcf66.js",
     "static/js/415.fc063c41.chunk.js": "/dev-portfolio/static/js/415.fc063c41.chunk.js",
     "static/js/787.f6e65957.chunk.js": "/dev-portfolio/static/js/787.f6e65957.chunk.js",
     "static/media/home-main.svg": "/dev-portfolio/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
     "static/media/about.png": "/dev-portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/home-bg.jpg": "/dev-portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/avatar.svg": "/dev-portfolio/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
-    "static/media/Raj_Kumar_Resume.pdf": "/dev-portfolio/static/media/Raj_Kumar_Resume.31bad8c443a6ac0a3faa.pdf",
-    "static/media/pre.svg": "/dev-portfolio/static/media/pre.4410c5baaa673cc131da.svg",
+    "static/media/Raj_Kumar_Resume.pdf": "/dev-portfolio/static/media/Raj_Kumar_Resume.f504cb10e14282e8bc9e.pdf",
     "index.html": "/dev-portfolio/index.html",
+    "static/media/pre.svg": "/dev-portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "main.f952b268.css.map": "/dev-portfolio/static/css/main.f952b268.css.map",
-    "main.fdf748eb.js.map": "/dev-portfolio/static/js/main.fdf748eb.js.map",
+    "main.289dcf66.js.map": "/dev-portfolio/static/js/main.289dcf66.js.map",
     "415.fc063c41.chunk.js.map": "/dev-portfolio/static/js/415.fc063c41.chunk.js.map",
     "787.f6e65957.chunk.js.map": "/dev-portfolio/static/js/787.f6e65957.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f952b268.css",
-    "static/js/main.fdf748eb.js"
+    "static/js/main.289dcf66.js"
   ]
 }
