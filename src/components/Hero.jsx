@@ -5,14 +5,14 @@ const DeveloperAvatarScene = lazy(() => import('./3d/DeveloperAvatarScene'));
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[100dvh] flex flex-col justify-between items-center bg-[#050508] overflow-hidden pt-20 pb-8 px-4 sm:px-8">
+    <section className="relative w-full min-h-[100dvh] flex flex-col justify-between items-center bg-[#050508] overflow-hidden pt-16 sm:pt-20 pb-4 sm:pb-8 px-3.5 sm:px-6 md:px-8">
       {/* ========================================================= */}
       {/* 1. TOP VOLUMETRIC CONICAL SPOTLIGHT BEAM                  */}
       {/* ========================================================= */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[95vh] pointer-events-none z-0">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[85vh] sm:h-[95vh] pointer-events-none z-0">
         {/* Top Light Source Apex Node */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-white/70 blur-md rounded-full" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-3 bg-white rounded-full shadow-[0_0_40px_20px_rgba(255,255,255,0.8)]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 sm:w-28 h-5 sm:h-6 bg-white/70 blur-md rounded-full" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-8 sm:w-12 h-2.5 sm:h-3 bg-white rounded-full shadow-[0_0_40px_20px_rgba(255,255,255,0.8)]" />
 
         {/* The Conical Light Beam (Apex down to floor) */}
         <div
@@ -25,15 +25,15 @@ export default function Hero() {
         />
 
         {/* Ambient Purple Floor Rim Light Reflection */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 w-[550px] h-[160px] bg-purple-600/15 blur-[90px] rounded-full pointer-events-none" />
+        <div className="absolute bottom-8 sm:bottom-12 left-1/2 -translate-x-1/2 w-[320px] sm:w-[550px] h-[120px] sm:h-[160px] bg-purple-600/15 blur-[70px] sm:blur-[90px] rounded-full pointer-events-none" />
       </div>
 
       {/* ========================================================= */}
       {/* 2. GIANT BACKGROUND OUTLINE WATERMARK ("DEVELOPER")       */}
       {/* ========================================================= */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden max-w-full">
         <span
-          className="font-display font-extrabold text-[15vw] tracking-tighter uppercase text-transparent leading-none opacity-20"
+          className="font-display font-extrabold text-[16vw] sm:text-[15vw] tracking-tighter uppercase text-transparent leading-none opacity-20 truncate"
           style={{
             WebkitTextStroke: '1.5px rgba(255, 255, 255, 0.22)',
           }}
@@ -85,13 +85,13 @@ export default function Hero() {
       {/* ========================================================= */}
       {/* 4. MAIN CENTER STAGE: 3D AVATAR + EDITORIAL TYPOGRAPHY    */}
       {/* ========================================================= */}
-      <div className="relative z-10 w-full max-w-6xl my-auto grid grid-cols-1 lg:grid-cols-12 items-center gap-6 lg:gap-8">
+      <div className="relative z-10 w-full max-w-6xl my-auto grid grid-cols-1 lg:grid-cols-12 items-center gap-4 sm:gap-6 lg:gap-8 pt-2 sm:pt-4">
         {/* Center 3D Avatar Canvas */}
-        <div className="lg:col-span-6 h-[380px] sm:h-[480px] lg:h-[560px] w-full relative flex items-center justify-center">
+        <div className="lg:col-span-6 h-[260px] sm:h-[380px] lg:h-[540px] w-full relative flex items-center justify-center">
           <Suspense
             fallback={
               <div className="flex items-center justify-center h-full text-xs font-mono text-zinc-500">
-                LOADING 3D SCENE...
+                LOADING 3D AVATAR...
               </div>
             }
           >
@@ -99,25 +99,25 @@ export default function Hero() {
           </Suspense>
 
           {/* Interactive Mouse Hint Pill */}
-          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-black/60 border border-white/[0.08] text-[10px] font-mono text-zinc-400 backdrop-blur-md pointer-events-none">
+          <div className="absolute bottom-1 sm:bottom-2 left-1/2 -translate-x-1/2 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-black/60 border border-white/[0.08] text-[9px] sm:text-[10px] font-mono text-zinc-400 backdrop-blur-md pointer-events-none whitespace-nowrap">
             3D AVATAR TRACKS CURSOR
           </div>
         </div>
 
         {/* Right Headline & Meta */}
-        <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
+        <div className="lg:col-span-6 space-y-4 sm:space-y-6 text-center lg:text-left">
           {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-xs font-mono text-purple-300">
-            <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-[11px] sm:text-xs font-mono text-purple-300">
+            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-purple-400 animate-pulse" />
             <span>I AM RAJ KUMAR</span>
           </div>
 
           {/* Headline */}
           <div>
-            <div className="font-heading text-sm sm:text-base font-semibold text-zinc-400 uppercase tracking-widest mb-1">
+            <div className="font-heading text-xs sm:text-sm md:text-base font-semibold text-zinc-400 uppercase tracking-widest mb-1">
               LEAD ARCHITECT &amp;
             </div>
-            <h1 className="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl text-white tracking-tight leading-[0.95]">
+            <h1 className="font-display font-extrabold text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.0] sm:leading-[0.95] break-words">
               DISTRIBUTED <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-300 to-white">
                 DEVELOPER
@@ -125,15 +125,15 @@ export default function Hero() {
             </h1>
           </div>
 
-          <p className="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
+          <p className="text-zinc-400 text-xs sm:text-sm md:text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
             8+ years architecting mission-critical backends, multi-tenant X12 EDI middleware, AS2 cryptographic protocols, and serverless GenAI inference pipelines.
           </p>
 
-          {/* Action Triggers */}
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+          {/* Action Triggers - Mobile Full Width */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-2.5 sm:gap-4 pt-1 sm:pt-2 w-full sm:w-auto">
             <a
               href="#works"
-              className="group flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-white text-black hover:bg-zinc-200 text-xs font-semibold tracking-tight transition-all duration-300 active:scale-95 shadow-[0_4px_25px_rgba(168,85,247,0.25)]"
+              className="group flex items-center justify-center gap-2 px-5 py-3 sm:px-6 sm:py-3.5 rounded-full bg-white text-black hover:bg-zinc-200 text-xs font-semibold tracking-tight transition-all duration-300 active:scale-95 shadow-[0_4px_25px_rgba(168,85,247,0.25)]"
             >
               <span>Explore Selected Works</span>
               <ArrowUpRight className="w-3.5 h-3.5 group-hover:rotate-45 transition-transform" />
@@ -142,7 +142,7 @@ export default function Hero() {
             <a
               href="./Raj_Kumar_Resume.pdf"
               download="Raj_Kumar_Resume.pdf"
-              className="flex items-center gap-2 px-6 py-3.5 rounded-full bg-white/[0.05] hover:bg-white/[0.1] text-zinc-200 hover:text-white border border-white/[0.1] text-xs font-medium transition-all duration-300 active:scale-95"
+              className="flex items-center justify-center gap-2 px-5 py-3 sm:px-6 sm:py-3.5 rounded-full bg-white/[0.05] hover:bg-white/[0.1] text-zinc-200 hover:text-white border border-white/[0.1] text-xs font-medium transition-all duration-300 active:scale-95"
             >
               <Download className="w-3.5 h-3.5 text-zinc-400" />
               <span>Download CV (ATS PDF)</span>
@@ -152,27 +152,27 @@ export default function Hero() {
       </div>
 
       {/* ========================================================= */}
-      {/* 5. BOTTOM SLIDER TRACK & DOWN INDICATOR (From Video)      */}
+      {/* 5. BOTTOM SLIDER TRACK & DOWN INDICATOR                   */}
       {/* ========================================================= */}
-      <div className="relative z-10 w-full max-w-4xl pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-zinc-500">
-        <div className="flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-purple-500" />
+      <div className="relative z-10 w-full max-w-4xl pt-4 sm:pt-6 border-t border-white/[0.06] flex items-center justify-between text-[11px] sm:text-xs font-mono text-zinc-500">
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-purple-500" />
           <span className="text-zinc-400 font-bold">8+ YRS</span>
           <span className="hidden sm:inline">• DISTRIBUTED SYSTEMS</span>
         </div>
 
-        {/* Center Spotlight Slider Indicator (Matching Video Icon) */}
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-[1px] bg-white/[0.2]" />
+        {/* Center Spotlight Slider Indicator (Hidden on ultra-small mobile) */}
+        <div className="hidden sm:flex items-center gap-3">
+          <div className="w-10 sm:w-12 h-[1px] bg-white/[0.2]" />
           <div className="w-5 h-5 rounded-full border border-white/[0.25] flex items-center justify-center text-[10px] text-white">
             ✕
           </div>
-          <div className="w-12 h-[1px] bg-white/[0.2]" />
+          <div className="w-10 sm:w-12 h-[1px] bg-white/[0.2]" />
         </div>
 
         <a
           href="#works"
-          className="flex items-center gap-1.5 text-zinc-400 hover:text-white transition-colors"
+          className="flex items-center gap-1 text-zinc-400 hover:text-white transition-colors"
         >
           <span>SCROLL</span>
           <ArrowDown className="w-3 h-3 animate-bounce" />

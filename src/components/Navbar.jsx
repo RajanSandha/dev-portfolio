@@ -7,7 +7,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
+      setScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
@@ -21,21 +21,21 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-4 px-4 sm:px-8">
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-2.5 sm:py-4 px-3 sm:px-8">
       <div
-        className={`max-w-7xl mx-auto rounded-full transition-all duration-500 px-5 sm:px-6 py-2.5 flex items-center justify-between ${
-          scrolled
-            ? 'bg-[#0b0c12]/80 backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_30px_rgb(0,0,0,0.5)]'
-            : 'bg-transparent border border-transparent'
+        className={`max-w-7xl mx-auto rounded-full transition-all duration-300 px-3.5 sm:px-6 py-2 sm:py-2.5 flex items-center justify-between ${
+          scrolled || mobileMenuOpen
+            ? 'bg-[#0b0c12]/90 backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_30px_rgb(0,0,0,0.6)]'
+            : 'bg-black/30 backdrop-blur-md border border-white/[0.04]'
         }`}
       >
         {/* Brand */}
-        <a href="#" className="flex items-center gap-3 group">
-          <div className="w-8 h-8 rounded-full bg-white/[0.06] border border-white/[0.12] flex items-center justify-center text-xs font-mono font-bold text-white group-hover:bg-white group-hover:text-black transition-all duration-300">
+        <a href="#" className="flex items-center gap-2.5 sm:gap-3 group">
+          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white/[0.08] border border-white/[0.12] flex items-center justify-center text-[11px] sm:text-xs font-mono font-bold text-white group-hover:bg-white group-hover:text-black transition-all duration-300">
             RK
           </div>
           <div>
-            <div className="font-display font-bold text-sm tracking-tight text-white flex items-center gap-2">
+            <div className="font-display font-bold text-xs sm:text-sm tracking-tight text-white flex items-center gap-1.5 sm:gap-2">
               RAJ KUMAR
               <span className="hidden md:inline-block text-[10px] font-mono text-zinc-500 font-normal">
                 / LEAD ARCHITECT
@@ -77,19 +77,19 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile Hamburger Toggle */}
+        {/* Mobile Actions Toggle */}
         <div className="flex items-center gap-2 md:hidden">
           <a
             href="./Raj_Kumar_Resume.pdf"
             download="Raj_Kumar_Resume.pdf"
-            className="p-2 rounded-full bg-white text-black"
+            className="p-2 rounded-full bg-white text-black hover:bg-zinc-200 transition-colors"
             title="Download Resume"
           >
             <Download className="w-3.5 h-3.5" />
           </a>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-full bg-white/[0.06] border border-white/[0.1] text-zinc-300 hover:text-white"
+            className="p-2 rounded-full bg-white/[0.06] border border-white/[0.1] text-zinc-300 hover:text-white active:scale-95 transition-all"
             aria-label="Toggle navigation"
           >
             {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
@@ -99,26 +99,29 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden mt-3 mx-2 p-5 rounded-3xl bg-[#0b0c12]/95 border border-white/[0.08] backdrop-blur-2xl shadow-2xl flex flex-col gap-2">
+        <div className="md:hidden mt-2 mx-1 p-4 rounded-2xl bg-[#0b0c12]/95 border border-white/[0.1] backdrop-blur-2xl shadow-2xl flex flex-col gap-1.5 animate-in fade-in slide-in-from-top-2 duration-200">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-between px-4 py-3 rounded-2xl text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/[0.04]"
+              className="flex items-center justify-between px-3.5 py-3 rounded-xl text-xs sm:text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/[0.06] transition-colors"
             >
               <span>{link.label}</span>
-              <ArrowUpRight className="w-4 h-4 text-zinc-500" />
+              <ArrowUpRight className="w-3.5 h-3.5 text-zinc-500" />
             </a>
           ))}
-          <div className="pt-3 border-t border-white/[0.08] flex items-center justify-between px-2 text-xs font-mono text-zinc-400">
-            <span>Status: Available</span>
+          <div className="pt-3 mt-1 border-t border-white/[0.08] flex items-center justify-between px-2 text-[11px] font-mono text-zinc-400">
+            <span className="flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+              Available for hire
+            </span>
             <a
               href="./Raj_Kumar_Resume.pdf"
               download="Raj_Kumar_Resume.pdf"
               className="text-white underline underline-offset-4"
             >
-              Download PDF
+              CV (PDF)
             </a>
           </div>
         </div>

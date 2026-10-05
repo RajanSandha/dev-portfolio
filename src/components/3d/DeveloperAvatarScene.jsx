@@ -411,11 +411,12 @@ function ParticleDust({ count = 120 }) {
 // ─── Main Scene Export ─────────────────────────────────────────────
 export default function DeveloperAvatarScene() {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative" style={{ touchAction: 'pan-y' }}>
       <Canvas
         camera={{ position: [0, 0.2, 2.8], fov: 45 }}
         gl={{ antialias: true, alpha: true }}
         dpr={[1, 2]}
+        style={{ touchAction: 'pan-y' }}
       >
         {/* Soft ambient */}
         <ambientLight intensity={0.45} />

@@ -17,7 +17,6 @@ import {
 
 export default function ProjectsShowcase() {
   const [expandedAll, setExpandedAll] = useState(false);
-  const [activeFilter, setActiveFilter] = useState('all');
 
   const flagshipProjects = [
     {
@@ -81,9 +80,9 @@ export default function ProjectsShowcase() {
         'Orchestrated a low-latency serverless GPU worker pool on RunPod executing garment segmentation and pose transfer. Chains FLUX.1 base model inpainting with IDM-VTON neural garment alignment to generate photorealistic virtual fittings in sub-4 seconds.',
       metrics: [
         { label: 'Inference', value: '<3.8s / fit' },
-        { label: 'GPU Cluster', value: 'RunPod Serverless' },
-        { label: 'Models', value: 'FLUX.1 + IDM-VTON' },
-        { label: 'Streaming', value: 'WebSocket Progress' },
+        { label: 'GPU Cluster', value: 'RunPod GPU' },
+        { label: 'Models', value: 'FLUX.1 + VTON' },
+        { label: 'Streaming', value: 'WebSocket Live' },
       ],
       highlights: [
         'Two-stage neural synthesis combining dense clothing mask extraction with high-res texture warping.',
@@ -105,7 +104,7 @@ export default function ProjectsShowcase() {
       description:
         'Engineered custom dual-pass contour extraction and edge thresholding algorithms specifically tuned for Brother and S8 thermal stencil printers. Powers over 50,000+ stencil conversions for tattoo studios worldwide with Stripe billing automation.',
       metrics: [
-        { label: 'Processed', value: '50,000+ Arts' },
+        { label: 'Processed', value: '50k+ Arts' },
         { label: 'Latency', value: '<800ms' },
         { label: 'Live Site', value: 'stengen.com' },
         { label: 'Monetization', value: 'Stripe SaaS' },
@@ -130,10 +129,10 @@ export default function ProjectsShowcase() {
       description:
         'Engineered a deterministic state-machine workflow orchestrating multi-country visa application pipelines across 40+ jurisdictional rules. Includes automated PDF OCR verification, BullMQ async queues, and an encrypted PII vault.',
       metrics: [
-        { label: 'Countries', value: '40+ Jurisdictions' },
+        { label: 'Countries', value: '40+ Rules' },
         { label: 'Queues', value: 'BullMQ / Redis' },
-        { label: 'API Specs', value: 'OpenAPI / Swagger' },
-        { label: 'Data Vault', value: 'Field-level AES' },
+        { label: 'API Specs', value: 'OpenAPI Spec' },
+        { label: 'Data Vault', value: 'AES-256 Vault' },
       ],
       highlights: [
         'Deterministic state machine coordinating document validation, payment escrow, and embassy submissions.',
@@ -199,69 +198,69 @@ export default function ProjectsShowcase() {
   ];
 
   return (
-    <section id="works" className="py-28 px-4 sm:px-8 max-w-7xl mx-auto relative z-10">
+    <section id="works" className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 md:px-8 max-w-7xl mx-auto relative z-10">
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-white/[0.08]">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 mb-10 sm:mb-16 pb-6 sm:pb-8 border-b border-white/[0.08]">
         <div>
-          <div className="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-3">
+          <div className="text-[11px] sm:text-xs font-mono text-zinc-500 uppercase tracking-widest mb-2 sm:mb-3">
             01 / SELECTED WORK
           </div>
-          <h2 className="font-display font-extrabold text-4xl sm:text-6xl text-white tracking-tight">
+          <h2 className="font-display font-extrabold text-3xl sm:text-5xl md:text-6xl text-white tracking-tight break-words">
             FLAGSHIP SYSTEMS.
           </h2>
         </div>
-        <p className="text-zinc-400 text-sm sm:text-base max-w-md">
+        <p className="text-zinc-400 text-xs sm:text-sm md:text-base max-w-md leading-relaxed">
           A curated selection of mission-critical backend architectures, distributed protocols, and AI inference engines built for production scale.
         </p>
       </div>
 
       {/* Flagship Projects Stack */}
-      <div className="space-y-12">
+      <div className="space-y-8 sm:space-y-12">
         {flagshipProjects.map((project) => (
           <div
             key={project.id}
-            className="editorial-card rounded-3xl p-6 sm:p-10 relative overflow-hidden group"
+            className="editorial-card rounded-2xl sm:rounded-3xl p-4 sm:p-7 md:p-10 relative overflow-hidden group"
           >
             {/* Ambient Background Accent */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white/[0.015] rounded-full blur-3xl pointer-events-none group-hover:bg-white/[0.03] transition-colors duration-500" />
+            <div className="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-white/[0.015] rounded-full blur-3xl pointer-events-none group-hover:bg-white/[0.03] transition-colors duration-500" />
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start relative z-10">
               {/* Left Column: Metadata & Narrative */}
-              <div className="lg:col-span-7 space-y-6">
-                <div className="flex items-center gap-3">
+              <div className="lg:col-span-7 space-y-4 sm:space-y-6">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                   <span className="font-mono text-xs text-zinc-500 font-bold">
                     {project.index} //
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-xs font-mono text-zinc-300">
+                  <span className="px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-[11px] sm:text-xs font-mono text-zinc-300">
                     {project.category}
                   </span>
-                  <span className="text-xs font-mono text-zinc-500">
+                  <span className="text-[11px] sm:text-xs font-mono text-zinc-500">
                     {project.role}
                   </span>
                 </div>
 
                 <div>
-                  <h3 className="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight group-hover:text-zinc-200 transition-colors">
+                  <h3 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight break-words group-hover:text-zinc-200 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-sm font-heading text-zinc-400 mt-1 font-medium">
+                  <p className="text-xs sm:text-sm font-heading text-zinc-400 mt-1 font-medium leading-snug">
                     {project.tagline}
                   </p>
                 </div>
 
-                <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
+                <p className="text-xs sm:text-sm md:text-base text-zinc-300 leading-relaxed">
                   {project.description}
                 </p>
 
                 {/* Key Architectural Highlights */}
-                <div className="space-y-2 pt-2">
-                  <div className="text-xs font-mono text-zinc-500 uppercase tracking-wider">
+                <div className="space-y-2 pt-1 sm:pt-2">
+                  <div className="text-[11px] sm:text-xs font-mono text-zinc-500 uppercase tracking-wider">
                     Core Technical Decisions:
                   </div>
                   <ul className="space-y-1.5 text-xs sm:text-sm text-zinc-400">
                     {project.highlights.map((item, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <span className="text-white mt-0.5">•</span>
+                        <span className="text-purple-400 mt-0.5 shrink-0">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -269,11 +268,11 @@ export default function ProjectsShowcase() {
                 </div>
 
                 {/* Tech Stack Pills */}
-                <div className="flex flex-wrap gap-2 pt-2">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1 sm:pt-2">
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2.5 py-1 rounded-lg bg-black/40 border border-white/[0.06] text-xs font-mono text-zinc-400"
+                      className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg bg-black/40 border border-white/[0.06] text-[11px] sm:text-xs font-mono text-zinc-400"
                     >
                       {tech}
                     </span>
@@ -282,24 +281,27 @@ export default function ProjectsShowcase() {
               </div>
 
               {/* Right Column: Architectural Metrics & Live CTA */}
-              <div className="lg:col-span-5 flex flex-col justify-between h-full space-y-6 bg-black/30 p-6 sm:p-8 rounded-2xl border border-white/[0.05]">
+              <div className="lg:col-span-5 flex flex-col justify-between h-full space-y-4 sm:space-y-6 bg-black/40 p-3.5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-white/[0.05]">
                 {/* Visual Architecture Badge */}
-                <div className="flex items-center justify-between border-b border-white/[0.06] pb-4">
-                  <div className="flex items-center gap-2 text-xs font-mono text-zinc-400">
-                    <Workflow className="w-3.5 h-3.5 text-white" />
-                    <span>{project.visualBadge}</span>
+                <div className="flex items-center justify-between border-b border-white/[0.06] pb-3 gap-2">
+                  <div className="flex items-center gap-2 text-[11px] sm:text-xs font-mono text-zinc-400 truncate">
+                    <Workflow className="w-3.5 h-3.5 text-purple-400 shrink-0" />
+                    <span className="truncate">{project.visualBadge}</span>
                   </div>
-                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 shrink-0" />
                 </div>
 
-                {/* Metrics Grid */}
-                <div className="grid grid-cols-2 gap-4 py-2">
+                {/* Metrics Grid - Resilient, Mobile-First, No Text Collisions */}
+                <div className="grid grid-cols-2 gap-2 sm:gap-3 py-1">
                   {project.metrics.map((m) => (
-                    <div key={m.label} className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.04]">
-                      <div className="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">
+                    <div 
+                      key={m.label} 
+                      className="p-2.5 sm:p-3.5 rounded-xl bg-white/[0.02] border border-white/[0.05] flex flex-col justify-center min-w-0 overflow-hidden"
+                    >
+                      <div className="text-[10px] sm:text-[11px] font-mono text-zinc-500 uppercase tracking-wider truncate">
                         {m.label}
                       </div>
-                      <div className="font-display font-bold text-base sm:text-lg text-white mt-0.5">
+                      <div className="font-heading font-bold text-xs sm:text-sm md:text-base text-white mt-1 break-words leading-tight">
                         {m.value}
                       </div>
                     </div>
@@ -307,19 +309,19 @@ export default function ProjectsShowcase() {
                 </div>
 
                 {/* External Action Button */}
-                <div className="pt-2">
+                <div className="pt-1 sm:pt-2">
                   {project.link !== '#' ? (
                     <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-semibold tracking-tight transition-all duration-200 active:scale-95 shadow-md"
+                      className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-semibold tracking-tight transition-all duration-200 active:scale-95 shadow-md"
                     >
                       <span>{project.linkText}</span>
-                      <ArrowUpRight className="w-4 h-4" />
+                      <ArrowUpRight className="w-3.5 h-3.5" />
                     </a>
                   ) : (
-                    <div className="w-full text-center px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.06] text-xs font-mono text-zinc-400">
+                    <div className="w-full text-center px-3 py-2.5 rounded-xl bg-white/[0.04] border border-white/[0.06] text-[11px] sm:text-xs font-mono text-zinc-400">
                       {project.linkText}
                     </div>
                   )}
@@ -331,20 +333,20 @@ export default function ProjectsShowcase() {
       </div>
 
       {/* Expandable Section: 13+ Additional Production Systems */}
-      <div className="mt-16 pt-12 border-t border-white/[0.08]">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+      <div className="mt-12 sm:mt-16 pt-8 sm:pt-12 border-t border-white/[0.08]">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 sm:mb-8">
           <div>
-            <div className="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-1">
+            <div className="text-[11px] sm:text-xs font-mono text-zinc-500 uppercase tracking-widest mb-1">
               ARCHIVE &amp; EXTENDED PORTFOLIO
             </div>
-            <h3 className="font-display font-bold text-2xl text-white">
+            <h3 className="font-display font-bold text-xl sm:text-2xl text-white">
               13+ Additional Production Systems
             </h3>
           </div>
 
           <button
             onClick={() => setExpandedAll(!expandedAll)}
-            className="self-start sm:self-auto flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.05] hover:bg-white/[0.09] text-zinc-300 hover:text-white border border-white/[0.08] text-xs font-mono transition-all"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-white/[0.05] hover:bg-white/[0.09] text-zinc-300 hover:text-white border border-white/[0.08] text-xs font-mono transition-all active:scale-95"
           >
             <span>{expandedAll ? 'Collapse Archive' : 'Expand Extended Systems'}</span>
             {expandedAll ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
@@ -352,14 +354,14 @@ export default function ProjectsShowcase() {
         </div>
 
         {expandedAll && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-in fade-in slide-in-from-top-4 duration-300">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 animate-in fade-in slide-in-from-top-4 duration-300">
             {secondarySystems.map((item) => (
               <div
                 key={item.title}
-                className="p-6 rounded-2xl bg-[#0b0c12]/70 border border-white/[0.06] hover:border-white/[0.15] transition-all flex flex-col justify-between"
+                className="p-4 sm:p-6 rounded-2xl bg-[#0b0c12]/80 border border-white/[0.06] hover:border-white/[0.15] transition-all flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center justify-between mb-2 sm:mb-3">
                     <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">
                       {item.category}
                     </span>
@@ -367,10 +369,10 @@ export default function ProjectsShowcase() {
                       {item.metric}
                     </span>
                   </div>
-                  <h4 className="font-display font-bold text-lg text-white mb-1">
+                  <h4 className="font-display font-bold text-base sm:text-lg text-white mb-1">
                     {item.title}
                   </h4>
-                  <p className="text-xs font-heading text-zinc-400 mb-3">
+                  <p className="text-xs font-heading text-zinc-400 mb-2">
                     {item.tagline}
                   </p>
                   <p className="text-xs text-zinc-400 leading-relaxed mb-4">

@@ -40,36 +40,36 @@ export default function Footer() {
   };
 
   return (
-    <footer id="contact" className="py-28 px-4 sm:px-8 max-w-7xl mx-auto border-t border-white/[0.08] relative z-10">
+    <footer id="contact" className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 md:px-8 max-w-7xl mx-auto border-t border-white/[0.08] relative z-10">
       {/* Editorial Contact Banner */}
-      <div className="space-y-8 mb-20">
-        <div className="text-xs font-mono text-zinc-500 uppercase tracking-widest">
+      <div className="space-y-4 sm:space-y-6 md:space-y-8 mb-10 sm:mb-16 md:mb-20">
+        <div className="text-[11px] sm:text-xs font-mono text-zinc-500 uppercase tracking-widest">
           04 / INITIATE CONVERSATION
         </div>
 
-        <h2 className="font-display font-extrabold text-5xl sm:text-7xl lg:text-8xl text-white tracking-tight leading-[0.95] max-w-4xl">
+        <h2 className="font-display font-extrabold text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-white tracking-tight leading-[1.05] sm:leading-[0.95] max-w-4xl break-words">
           HAVE A SYSTEM TO SCALE? <br />
           <span className="text-zinc-500 hover:text-white transition-colors duration-500">
             LET&apos;S TALK.
           </span>
         </h2>
 
-        <p className="text-zinc-400 text-base sm:text-xl max-w-2xl leading-relaxed">
+        <p className="text-zinc-400 text-xs sm:text-base md:text-xl max-w-2xl leading-relaxed">
           Open for Lead Backend Engineer, Systems Architect, or Principal Engineering roles. Available for remote engagement worldwide or on-site discussions in Mohali / Chandigarh.
         </p>
       </div>
 
       {/* Interactive Communication Channels */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-6 mb-12 sm:mb-16 md:mb-20">
         {/* Email Card */}
-        <div className="editorial-card rounded-2xl p-6 flex flex-col justify-between space-y-4">
+        <div className="editorial-card rounded-2xl p-4 sm:p-6 flex flex-col justify-between space-y-3 sm:space-y-4">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-mono text-zinc-500 uppercase tracking-wider">
+            <span className="text-[11px] sm:text-xs font-mono text-zinc-500 uppercase tracking-wider">
               Primary Inbound
             </span>
             <button
               onClick={() => copyToClipboard('rajatworkplace@gmail.com', 'email')}
-              className="p-2 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-zinc-400 hover:text-white transition-colors"
+              className="p-1.5 sm:p-2 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-zinc-400 hover:text-white transition-colors"
               title="Copy Email"
             >
               {copiedEmail ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
@@ -78,23 +78,23 @@ export default function Footer() {
           <div>
             <a
               href="mailto:rajatworkplace@gmail.com"
-              className="font-display font-bold text-xl text-white hover:text-zinc-300 transition-colors block truncate"
+              className="font-display font-bold text-base sm:text-xl text-white hover:text-zinc-300 transition-colors block break-all"
             >
               rajatworkplace@gmail.com
             </a>
-            <p className="text-xs text-zinc-500 mt-1">Direct inquiries &amp; interview scheduling</p>
+            <p className="text-[11px] sm:text-xs text-zinc-500 mt-1">Direct inquiries &amp; interview scheduling</p>
           </div>
         </div>
 
         {/* Phone Card */}
-        <div className="editorial-card rounded-2xl p-6 flex flex-col justify-between space-y-4">
+        <div className="editorial-card rounded-2xl p-4 sm:p-6 flex flex-col justify-between space-y-3 sm:space-y-4">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-mono text-zinc-500 uppercase tracking-wider">
+            <span className="text-[11px] sm:text-xs font-mono text-zinc-500 uppercase tracking-wider">
               Direct Phone / WhatsApp
             </span>
             <button
               onClick={() => copyToClipboard('+919835004000', 'phone')}
-              className="p-2 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-zinc-400 hover:text-white transition-colors"
+              className="p-1.5 sm:p-2 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-zinc-400 hover:text-white transition-colors"
               title="Copy Phone"
             >
               {copiedPhone ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
@@ -103,25 +103,25 @@ export default function Footer() {
           <div>
             <a
               href="tel:+919835004000"
-              className="font-display font-bold text-xl text-white hover:text-zinc-300 transition-colors block"
+              className="font-display font-bold text-lg sm:text-xl text-white hover:text-zinc-300 transition-colors block"
             >
               +91 98350 04000
             </a>
-            <p className="text-xs text-zinc-500 mt-1">Mobile &amp; WhatsApp communication</p>
+            <p className="text-[11px] sm:text-xs text-zinc-500 mt-1">Mobile &amp; WhatsApp communication</p>
           </div>
         </div>
 
         {/* Social / Professional Profiles Card */}
-        <div className="editorial-card rounded-2xl p-6 flex flex-col justify-between space-y-4">
-          <span className="text-xs font-mono text-zinc-500 uppercase tracking-wider">
+        <div className="editorial-card rounded-2xl p-4 sm:p-6 flex flex-col justify-between space-y-3 sm:space-y-4">
+          <span className="text-[11px] sm:text-xs font-mono text-zinc-500 uppercase tracking-wider">
             Verified Profiles
           </span>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <a
               href="https://linkedin.com/in/rajansandha"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-between p-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-xs font-mono text-zinc-200 transition-colors"
+              className="flex-1 flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-xs font-mono text-zinc-200 transition-colors"
             >
               <span>LinkedIn</span>
               <ArrowUpRight className="w-3.5 h-3.5 text-zinc-400" />
@@ -130,7 +130,7 @@ export default function Footer() {
               href="https://github.com/RajanSandha"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-between p-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-xs font-mono text-zinc-200 transition-colors"
+              className="flex-1 flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-xs font-mono text-zinc-200 transition-colors"
             >
               <span>GitHub</span>
               <ArrowUpRight className="w-3.5 h-3.5 text-zinc-400" />
@@ -140,8 +140,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom Telemetry & Navigation */}
-      <div className="pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-500">
-        <div className="flex items-center gap-3">
+      <div className="pt-6 sm:pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-[11px] sm:text-xs font-mono text-zinc-500 text-center sm:text-left">
+        <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3">
           <span className="text-white font-bold">&copy; 2026 Raj Kumar</span>
           <span>•</span>
           <span>Lead Systems Architect</span>
@@ -149,7 +149,7 @@ export default function Footer() {
           <span className="text-zinc-400">{time ? `${time} IST (Mohali)` : 'Mohali, India'}</span>
         </div>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 sm:gap-6">
           <a
             href="./Raj_Kumar_Resume.pdf"
             download="Raj_Kumar_Resume.pdf"

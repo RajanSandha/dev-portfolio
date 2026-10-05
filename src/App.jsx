@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <SmoothScroll>
-      <div className="min-h-screen bg-[#050508] text-zinc-100 font-sans selection:bg-white/20 selection:text-white relative">
+      <div className="min-h-screen bg-[#050508] text-zinc-100 font-sans selection:bg-white/20 selection:text-white relative overflow-x-hidden w-full">
         {/* Subtle Interactive Ambient Glow */}
         <CursorGlow />
 

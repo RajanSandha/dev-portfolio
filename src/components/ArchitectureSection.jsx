@@ -105,24 +105,24 @@ class VisaApplicationLifecycle:
   const currentPillar = pillars.find((p) => p.id === activeTab) || pillars[0];
 
   return (
-    <section id="architecture" className="py-28 px-4 sm:px-8 max-w-7xl mx-auto relative z-10">
+    <section id="architecture" className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 md:px-8 max-w-7xl mx-auto relative z-10">
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-white/[0.08]">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 mb-8 sm:mb-12 md:mb-16 pb-6 sm:pb-8 border-b border-white/[0.08]">
         <div>
-          <div className="text-xs font-mono text-zinc-500 uppercase tracking-widest mb-3">
+          <div className="text-[11px] sm:text-xs font-mono text-zinc-500 uppercase tracking-widest mb-2 sm:mb-3">
             02 / CORE CAPABILITIES
           </div>
-          <h2 className="font-display font-extrabold text-4xl sm:text-6xl text-white tracking-tight">
+          <h2 className="font-display font-extrabold text-3xl sm:text-5xl md:text-6xl text-white tracking-tight break-words leading-[1.05]">
             SYSTEM ARCHITECTURE.
           </h2>
         </div>
-        <p className="text-zinc-400 text-sm sm:text-base max-w-md">
+        <p className="text-zinc-400 text-xs sm:text-sm md:text-base max-w-md leading-relaxed">
           Deep-dive into the architectural patterns, security primitives, and execution pipelines engineered across 8+ years of production experience.
         </p>
       </div>
 
-      {/* Domain Navigation Tabs */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar">
+      {/* Domain Navigation Tabs - Horizontal Swipe on Mobile */}
+      <div className="-mx-3.5 px-3.5 sm:mx-0 sm:px-0 flex items-center gap-2 overflow-x-auto pb-3 mb-6 sm:mb-8 no-scrollbar touch-pan-x">
         {pillars.map((pillar) => {
           const Icon = pillar.icon;
           const isActive = activeTab === pillar.id;
@@ -130,44 +130,44 @@ class VisaApplicationLifecycle:
             <button
               key={pillar.id}
               onClick={() => setActiveTab(pillar.id)}
-              className={`flex items-center gap-2 px-5 py-3 rounded-full text-xs font-mono transition-all duration-300 shrink-0 ${
+              className={`flex items-center gap-2 px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-full text-[11px] sm:text-xs font-mono transition-all duration-300 shrink-0 ${
                 isActive
                   ? 'bg-white text-black font-bold shadow-[0_4px_20px_rgba(255,255,255,0.12)]'
                   : 'bg-white/[0.03] text-zinc-400 hover:text-white hover:bg-white/[0.07] border border-white/[0.06]'
               }`}
             >
-              <Icon className="w-3.5 h-3.5" />
-              <span>{pillar.title}</span>
+              <Icon className="w-3.5 h-3.5 shrink-0" />
+              <span className="whitespace-nowrap">{pillar.title}</span>
             </button>
           );
         })}
       </div>
 
       {/* Active Pillar Card */}
-      <div className="editorial-card rounded-3xl p-6 sm:p-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div className="editorial-card rounded-2xl sm:rounded-3xl p-4 sm:p-7 md:p-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
           {/* Left Column: Details */}
-          <div className="lg:col-span-6 space-y-6">
-            <div className="inline-block px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-xs font-mono text-zinc-300">
+          <div className="lg:col-span-6 space-y-4 sm:space-y-6">
+            <div className="inline-block px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.08] text-[11px] sm:text-xs font-mono text-zinc-300">
               {currentPillar.badge}
             </div>
 
-            <h3 className="font-display font-bold text-2xl sm:text-3xl text-white tracking-tight">
+            <h3 className="font-display font-bold text-xl sm:text-2xl md:text-3xl text-white tracking-tight break-words leading-snug">
               {currentPillar.headline}
             </h3>
 
-            <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base text-zinc-300 leading-relaxed">
               {currentPillar.description}
             </p>
 
-            <div className="space-y-2 pt-2">
-              <div className="text-xs font-mono text-zinc-500 uppercase tracking-wider">
+            <div className="space-y-2 pt-1 sm:pt-2">
+              <div className="text-[11px] sm:text-xs font-mono text-zinc-500 uppercase tracking-wider">
                 Key Technical Specifications:
               </div>
               <ul className="space-y-2">
                 {currentPillar.specs.map((spec, i) => (
-                  <li key={i} className="flex items-start gap-2 text-xs sm:text-sm text-zinc-300">
-                    <Check className="w-3.5 h-3.5 text-white shrink-0 mt-0.5" />
+                  <li key={i} className="flex items-start gap-2 text-xs sm:text-sm text-zinc-300 leading-relaxed">
+                    <Check className="w-3.5 h-3.5 text-purple-400 shrink-0 mt-0.5" />
                     <span>{spec}</span>
                   </li>
                 ))}
@@ -176,18 +176,18 @@ class VisaApplicationLifecycle:
           </div>
 
           {/* Right Column: Code Schematic */}
-          <div className="lg:col-span-6">
-            <div className="rounded-2xl bg-black/80 border border-white/[0.08] p-5 font-mono text-xs overflow-x-auto shadow-2xl">
-              <div className="flex items-center justify-between border-b border-white/[0.08] pb-3 mb-4 text-zinc-500 text-[11px]">
+          <div className="lg:col-span-6 w-full min-w-0">
+            <div className="rounded-xl sm:rounded-2xl bg-black/90 border border-white/[0.08] p-3.5 sm:p-5 font-mono text-[11px] sm:text-xs shadow-2xl overflow-x-auto max-w-full">
+              <div className="flex items-center justify-between border-b border-white/[0.08] pb-3 mb-3 text-zinc-500 text-[10px] sm:text-[11px]">
                 <div className="flex items-center gap-1.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
                   <span className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
                   <span className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
-                  <span className="ml-2 font-mono text-zinc-400">architecture-spec.ts</span>
+                  <span className="ml-2 font-mono text-zinc-400 truncate">architecture-spec.ts</span>
                 </div>
-                <span className="text-[10px] text-emerald-400 font-mono">PRODUCTION VERIFIED</span>
+                <span className="text-[9px] sm:text-[10px] text-emerald-400 font-mono shrink-0">PRODUCTION VERIFIED</span>
               </div>
-              <pre className="text-zinc-300 leading-relaxed whitespace-pre-wrap font-mono">
+              <pre className="text-zinc-300 leading-relaxed font-mono whitespace-pre overflow-x-auto text-[10.5px] sm:text-xs block w-full py-1">
                 {currentPillar.codeSnippet}
               </pre>
             </div>
