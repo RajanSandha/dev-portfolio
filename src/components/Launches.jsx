@@ -20,7 +20,6 @@ export default function Launches() {
         <img src={`${import.meta.env.BASE_URL}products/${product.image}`} alt={`${product.name} product artwork`} width="1024" height="576" loading="lazy" className="w-full aspect-video object-cover" />
         <div className="p-6 sm:p-8"><p className="text-xs text-purple-300">{product.category}</p><h3 className="text-2xl font-semibold mt-3">{product.name}</h3><p className="mt-3 text-zinc-300 leading-relaxed">{product.description}</p>
           {product.install && <div className="mt-5 rounded-lg bg-white/5 border border-white/10 p-4"><p className="text-xs text-zinc-300">Free to install · {product.license}</p><code className="block mt-2 text-sm break-all">{product.install}</code><p className="mt-2 text-xs text-zinc-400">Concept artwork shown above.</p></div>}
-          {product.packages && <ul className="mt-4 grid sm:grid-cols-2 gap-2">{product.packages.map(name=><li key={name}><a className="text-sm text-purple-200 underline-offset-4 hover:underline" href={`https://www.npmjs.com/package/@nanonomad/${name}`} target="_blank" rel="noopener noreferrer">@nanonomad/{name} ↗</a></li>)}</ul>}
           <a href={product.href} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center gap-2 min-h-11 text-sm font-semibold text-purple-200 hover:text-white">{product.label}<ArrowUpRight size={16}/></a></div>
       </article>)}
     </div>
