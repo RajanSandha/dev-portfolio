@@ -37,6 +37,11 @@ for exp in d['experiences']:
     md.extend(['\n### '+exp['role']+' | '+exp['company'],exp['period']+' | '+exp['location']])
     for point in exp['achievements']:bullet(point)
     story.append(Spacer(1,4))
+section('Open-source Developer Tools')
+for tool in d.get('developerTools', []):
+    p('<b>'+html.escape(tool['name'])+':</b> '+html.escape(tool['description']))
+    p('<link href="'+tool['url']+'">'+tool['url']+'</link>','SmallLine')
+    md.append('- '+tool['name']+': '+tool['description']+' '+tool['url'])
 story.append(PageBreak())
 p(d['name']+' | Selected Projects','RoleLine')
 section('Selected Engineering Projects')

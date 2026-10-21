@@ -8,7 +8,7 @@ Mohali, Punjab, India | +91 98350 04000 | rajatworkplace@gmail.com | linkedin.co
 ## Professional Summary
 
 
-Backend engineer and systems architect with 8+ years of experience building APIs, enterprise integrations and data-driven applications. Hands-on expertise in Python, FastAPI, TypeScript, NestJS, PostgreSQL, MongoDB and asynchronous workers. Delivered EDI/AS2 and payroll integrations, real-time services, and provider-independent AI workflows. Independently launched mobile apps and browser tools through CompileCraft.
+Backend engineer and systems architect with 8+ years of experience building APIs, enterprise integrations and data-driven applications. Hands-on expertise in Python, FastAPI, TypeScript, NestJS, PostgreSQL, MongoDB and asynchronous workers. Delivered EDI/AS2 and payroll integrations, real-time services, and provider-independent AI workflows. Published npm developer libraries and AI workflow tooling, alongside CompileCraft mobile apps and browser tools.
 
 
 ## Technical Skills
@@ -54,6 +54,14 @@ Delivery & security: Docker, Git, Linux, AWS S3 / SQS / Secrets Manager, JWT, OA
 - Developed Java/XML Android features with SQLite storage and REST integration.
 
 - Contributed PHP/SQL backend features and database schema design.
+
+
+## Open-source Developer Tools
+
+
+- NanoNomad: Published a connected npm ecosystem: a framework-independent digital pet engine, shared SVG character packs, and JavaScript / React / Next.js wrappers with lifecycle cleanup, dragging and form reactions. https://www.npmjs.com/package/@nanonomad/react
+
+- CompileCraftCode: Published a Node.js CLI for AI-assisted SDLC orchestration, combining ordered agent stages, editor adapters and compact Markdown project memory. Available free on npm. https://www.npmjs.com/package/compilecraftcode
 
 
 ## Selected Engineering Projects
