@@ -27,7 +27,7 @@ Delivery & security: Docker, Git, Linux, AWS S3 / SQS / Secrets Manager, JWT, OA
 
 
 
-### Lead Backend Engineer & Systems Architect | Luminoguru Pvt Ltd
+### Associate Software Engineer | Luminoguru Pvt Ltd
 
 2020 - PRESENT | Mohali, India
 

@@ -5,7 +5,7 @@ export default function ExperienceTimeline() {
   const experiences = [
   {
     "period": "2020 — PRESENT",
-    "role": "Lead Backend Engineer & Systems Architect",
+    "role": "Associate Software Engineer",
     "company": "Luminoguru Pvt Ltd",
     "location": "Mohali, India",
     "summary": "Lead backend implementation for enterprise integrations, workforce software and AI application platforms.",
