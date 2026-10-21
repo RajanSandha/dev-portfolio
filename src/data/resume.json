@@ -1,0 +1,131 @@
+{
+  "name": "Raj Kumar",
+  "title": "Lead Backend Engineer | Python, TypeScript & AI Applications",
+  "contact": [
+    "Mohali, Punjab, India",
+    "+91 98350 04000",
+    "rajatworkplace@gmail.com",
+    "linkedin.com/in/rajansandha",
+    "github.com/RajanSandha",
+    "rajansandha.github.io/dev-portfolio"
+  ],
+  "summary": "Backend engineer and systems architect with 8+ years of experience building APIs, enterprise integrations and data-driven applications. Hands-on expertise in Python, FastAPI, TypeScript, NestJS, PostgreSQL, MongoDB and asynchronous workers. Delivered EDI/AS2 and payroll integrations, real-time services, and provider-independent AI workflows. Independently launched mobile apps and browser tools through CompileCraft.",
+  "skills": [
+    [
+      "Backend",
+      "Python, FastAPI, AsyncIO, TypeScript, JavaScript, Node.js, NestJS, Express, PHP, REST APIs, WebSockets, Socket.IO"
+    ],
+    [
+      "Data & workers",
+      "PostgreSQL, SQLAlchemy, MongoDB, Mongoose, MySQL, Redis, BullMQ, ARQ, SQL, schema design, caching, idempotent processing"
+    ],
+    [
+      "AI & integrations",
+      "Gemini / Vertex AI, ComfyUI, OpenAI SDK, OpenCV, X12 EDI, AS2, ERP adapters, Xero payroll, Stripe, Shopify webhooks"
+    ],
+    [
+      "Delivery & security",
+      "Docker, Git, Linux, AWS S3 / SQS / Secrets Manager, JWT, OAuth2, audit logging, pytest, Jest, Supertest"
+    ]
+  ],
+  "experiences": [
+    {
+      "period": "2020 - PRESENT",
+      "role": "Lead Backend Engineer & Systems Architect",
+      "company": "Luminoguru Pvt Ltd",
+      "location": "Mohali, India",
+      "summary": "Lead backend implementation for enterprise integrations, workforce software and AI application platforms.",
+      "achievements": [
+        "Built multi-tenant X12 EDI middleware with signed AS2 transport and ERP adapters.",
+        "Developed TGA-Mesh workforce services with queued Xero payroll sync and real-time messaging.",
+        "Designed provider-independent AI generation orchestration and image-processing services."
+      ]
+    },
+    {
+      "period": "2019 - 2020",
+      "role": "Backend & Web Developer",
+      "company": "Quadrish Innovations",
+      "location": "Chandigarh, India",
+      "summary": "Developed web backends, relational data models and service integrations.",
+      "achievements": [
+        "Built and maintained REST APIs using PHP frameworks and MySQL.",
+        "Integrated Node.js and MongoDB modules for asynchronous data workflows."
+      ]
+    },
+    {
+      "period": "2017 - 2019",
+      "role": "Software & Mobile Engineer (Trainee to Developer)",
+      "company": "Tuespot Pvt Ltd",
+      "location": "Mohali, India",
+      "summary": "Worked on Android applications and web portal backends.",
+      "achievements": [
+        "Developed Java/XML Android features with SQLite storage and REST integration.",
+        "Contributed PHP/SQL backend features and database schema design."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "EDI Middleware & AS2 Gateway",
+      "status": "Professional project",
+      "stack": "Python, FastAPI, PostgreSQL, SQLAlchemy, Redis, ARQ, Docker",
+      "points": [
+        "Implemented signed and encrypted AS2 transport with synchronous and asynchronous MDN receipts.",
+        "Added idempotent document ingestion, tenant configuration and append-only audit records."
+      ]
+    },
+    {
+      "name": "TGA-Mesh",
+      "status": "Professional project",
+      "stack": "TypeScript, NestJS, MongoDB, Redis, BullMQ, Xero, Socket.IO",
+      "points": [
+        "Implemented shift and leave rules with worker-based timesheet aggregation.",
+        "Integrated queued Xero payroll sync, encrypted credentials and retry handling."
+      ]
+    },
+    {
+      "name": "FashionTryOn",
+      "status": "In development / production proof of concept",
+      "stack": "Python, FastAPI, NestJS, Redis, Shopify, Gemini, ComfyUI",
+      "points": [
+        "Unified Gemini, ComfyUI and Decart/FASHN generation pipelines behind a provider adapter interface.",
+        "Designed queued generation with callbacks so GPU workloads do not block storefront requests."
+      ]
+    },
+    {
+      "name": "StenGen",
+      "status": "Professional project",
+      "stack": "TypeScript, NestJS, Python, OpenCV, Vector processing",
+      "points": [
+        "Separated ingestion, validation and user sessions from image-processing workloads.",
+        "Combined OpenCV image quantization and vector processing for stencil-oriented output."
+      ]
+    }
+  ],
+  "launches": [
+    [
+      "Creditora",
+      "Android finance app for khata, repayments, EMI tracking and shared expenses.",
+      "https://play.google.com/store/apps/details?id=in.compilecraft.creditora"
+    ],
+    [
+      "HandBrowse",
+      "Chrome extension for camera-based gesture browsing with on-device processing.",
+      "https://handbrowse.compilecraft.in"
+    ],
+    [
+      "Chess Royal",
+      "Android chess app with an AI coach, computer opponent and local play.",
+      "https://play.google.com/store/apps/details?id=in.compilecraft.chessroyal"
+    ],
+    [
+      "Face Dodge",
+      "Android survival game with camera-based face movement controls.",
+      "https://play.google.com/store/apps/details?id=in.compilecraft.facedodge"
+    ]
+  ],
+  "education": [
+    "Master of Computer Applications (MCA) | MRSPTU, Punjab | 2016 - 2018",
+    "Bachelor of Computer Applications (BCA) | Panjab University, Chandigarh | 2012 - 2015"
+  ]
+}

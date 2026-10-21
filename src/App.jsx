@@ -3,6 +3,7 @@ import SmoothScroll from './components/SmoothScroll';
 import CursorGlow from './components/CursorGlow';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Launches from './components/Launches';
 import ProjectsShowcase from './components/ProjectsShowcase';
 import ArchitectureSection from './components/ArchitectureSection';
 import ExperienceTimeline from './components/ExperienceTimeline';
@@ -23,6 +24,7 @@ export default function App() {
           <Hero />
 
           {/* Cinematic Flagship Projects (5 Key Systems + 13 Archive Systems) */}
+          <Launches />
           <ProjectsShowcase />
 
           {/* Technical Domains & Architecture Pillars */}

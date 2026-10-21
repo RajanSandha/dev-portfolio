@@ -1,0 +1,176 @@
+[
+  {
+    "id": "edi",
+    "title": "EDI Middleware & AS2 Gateway",
+    "tagline": "Multi-tenant retail and warehouse integrations",
+    "category": "Backend & enterprise integration",
+    "role": "Lead Backend / Systems Engineer",
+    "description": "Built an asynchronous X12 EDI pipeline connecting retail partners and warehouses to Icicle ERP, from ingestion and validation through mapping, acknowledgements and audit trails.",
+    "metrics": [
+      {
+        "label": "API",
+        "value": "FastAPI"
+      },
+      {
+        "label": "Data",
+        "value": "PostgreSQL"
+      },
+      {
+        "label": "Workers",
+        "value": "Redis / ARQ"
+      },
+      {
+        "label": "Transport",
+        "value": "AS2 / SFTP"
+      }
+    ],
+    "highlights": [
+      "Implemented signed and encrypted AS2 transport with synchronous and asynchronous MDN receipts.",
+      "Added idempotent document ingestion, tenant configuration and append-only audit records.",
+      "Integrated swappable ERP adapters and containerized API, worker and database services."
+    ],
+    "stack": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Redis",
+      "ARQ",
+      "Docker"
+    ],
+    "link": "https://compilecraft.in/en/work",
+    "linkText": "Read project context",
+    "visualBadge": "Ingest → validate → ERP → acknowledge",
+    "index": "01"
+  },
+  {
+    "id": "tga-mesh",
+    "title": "TGA-Mesh",
+    "tagline": "Workforce operations and payroll integration for childcare centres",
+    "category": "Workforce management",
+    "role": "Full Stack / Mobile Backend Architect",
+    "description": "Built a NestJS workforce backend covering rostering, leave, timesheets, Xero payroll synchronization, messaging and staff engagement across childcare centres.",
+    "metrics": [
+      {
+        "label": "API",
+        "value": "NestJS"
+      },
+      {
+        "label": "Data",
+        "value": "MongoDB"
+      },
+      {
+        "label": "Payroll",
+        "value": "Xero"
+      },
+      {
+        "label": "Realtime",
+        "value": "Socket.IO"
+      }
+    ],
+    "highlights": [
+      "Implemented shift and leave rules with worker-based timesheet aggregation.",
+      "Integrated queued Xero payroll sync, encrypted credentials and retry handling.",
+      "Delivered Socket.IO messaging, Firebase notifications and an S3 document library."
+    ],
+    "stack": [
+      "TypeScript",
+      "NestJS",
+      "MongoDB",
+      "Redis",
+      "BullMQ",
+      "Xero",
+      "Socket.IO"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=mesh.tga.edu.au",
+    "linkText": "View TGA-Mesh on Google Play",
+    "visualBadge": "Roster → timesheet → payroll",
+    "index": "02"
+  },
+  {
+    "id": "fashiontryon",
+    "title": "FashionTryOn",
+    "tagline": "Provider-independent AI virtual fitting room",
+    "category": "AI application engineering · In development",
+    "role": "Principal AI & Systems Architect",
+    "description": "Designed a virtual fitting room platform and Shopify integration that separates the commerce lifecycle from AI providers. This project is in active development / production proof of concept.",
+    "metrics": [
+      {
+        "label": "Models",
+        "value": "Provider adapters"
+      },
+      {
+        "label": "Commerce",
+        "value": "Shopify"
+      },
+      {
+        "label": "Jobs",
+        "value": "Async workers"
+      },
+      {
+        "label": "Status",
+        "value": "In development"
+      }
+    ],
+    "highlights": [
+      "Unified Gemini, ComfyUI and Decart/FASHN generation pipelines behind a provider adapter interface.",
+      "Designed queued generation with callbacks so GPU workloads do not block storefront requests.",
+      "Built modular integration boundaries for future commerce platform adapters."
+    ],
+    "stack": [
+      "Python",
+      "FastAPI",
+      "NestJS",
+      "Redis",
+      "Shopify",
+      "Gemini",
+      "ComfyUI"
+    ],
+    "link": "https://compilecraft.in/en/work",
+    "linkText": "Read project context",
+    "visualBadge": "Commerce → orchestration → AI provider",
+    "index": "03"
+  },
+  {
+    "id": "stengen",
+    "title": "StenGen",
+    "tagline": "Image-to-stencil processing for tattoo artists",
+    "category": "Computer vision",
+    "role": "Lead Backend & Computer Vision Systems Engineer",
+    "description": "Engineered an image processing and vectorization pipeline that turns photographs and artwork into stencil-ready tattoo outlines, with a NestJS gateway and Python processing workers.",
+    "metrics": [
+      {
+        "label": "Vision",
+        "value": "OpenCV"
+      },
+      {
+        "label": "Processing",
+        "value": "Python workers"
+      },
+      {
+        "label": "Gateway",
+        "value": "NestJS"
+      },
+      {
+        "label": "Product",
+        "value": "stengen.com"
+      }
+    ],
+    "highlights": [
+      "Separated ingestion, validation and user sessions from image-processing workloads.",
+      "Combined OpenCV image quantization and vector processing for stencil-oriented output.",
+      "Built asynchronous boundaries between the API gateway and image worker layer."
+    ],
+    "stack": [
+      "TypeScript",
+      "NestJS",
+      "Python",
+      "OpenCV",
+      "Vector processing"
+    ],
+    "link": "https://stengen.com",
+    "linkText": "Visit StenGen",
+    "visualBadge": "Image → processing → stencil",
+    "index": "04"
+  }
+]

@@ -14,7 +14,8 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: 'Selected Works', href: '#works' },
+    { label: 'Products', href: '#products' },
+    { label: 'Projects', href: '#works' },
     { label: 'Architecture', href: '#architecture' },
     { label: 'Experience', href: '#experience' },
     { label: 'Contact', href: '#contact' },

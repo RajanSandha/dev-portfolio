@@ -126,7 +126,7 @@ export default function Hero() {
           </div>
 
           <p className="text-zinc-400 text-xs sm:text-sm md:text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
-            8+ years architecting mission-critical backends, multi-tenant X12 EDI middleware, AS2 cryptographic protocols, and serverless GenAI inference pipelines.
+            8+ years building backend services, enterprise integrations and AI applications. Now shipping independent mobile apps and browser tools through CompileCraft.
           </p>
 
           {/* Action Triggers - Mobile Full Width */}

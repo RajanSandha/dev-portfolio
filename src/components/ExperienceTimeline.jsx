@@ -3,47 +3,41 @@ import { Calendar, Download, ExternalLink, MapPin } from 'lucide-react';
 
 export default function ExperienceTimeline() {
   const experiences = [
-    {
-      period: '2022 — PRESENT',
-      role: 'Lead Backend Engineer & Systems Architect',
-      company: 'Enterprise Technology & Cloud Systems Partner',
-      location: 'Mohali, Punjab, India (Remote / Hybrid)',
-      summary:
-        'Architecting distributed backend infrastructure, multi-tenant X12 EDI middleware, AS2 cryptographic engines, and generative AI pipelines for enterprise clients across North America and Europe.',
-      achievements: [
-        'Designed high-throughput ANSI X12 850/945/810 processing hub handling 10k+ msgs/min with sub-second ERP synchronization.',
-        'Engineered an encrypted off-grid BLE mesh communication protocol for low-power sensor networks (TGA-Mesh on Google Play).',
-        'Orchestrated serverless GPU inference clusters on RunPod deploying FLUX.1 and IDM-VTON virtual fitting room engines in <3.8s.',
-        'Mentored engineering teams on async design patterns, connection pooling, and resilient PostgreSQL 16 architectures.',
-      ],
-    },
-    {
-      period: '2019 — 2022',
-      role: 'Senior Backend Engineer & Tech Lead',
-      company: 'Digital Solutions & Enterprise Software',
-      location: 'India',
-      summary:
-        'Led backend development teams building high-traffic SaaS systems across travel logistics, automated booking pipelines, and financial settlement platforms.',
-      achievements: [
-        'Built deterministic state-machine workflow engine coordinating 40+ jurisdictional visa application pipelines (Globetrottr).',
-        'Engineered distributed task queueing architecture with BullMQ and Redis, eliminating request timeouts and cutting job latency by 85%.',
-        'Integrated international payment gateways, consular submission endpoints, and banking settlement interfaces.',
-      ],
-    },
-    {
-      period: '2016 — 2019',
-      role: 'Software Engineer (Backend Focus)',
-      company: 'Product Engineering & Systems Lab',
-      location: 'India',
-      summary:
-        'Developed core API microservices, database schemas, and background cron workers in Python and Node.js.',
-      achievements: [
-        'Implemented relational schema design, query indexing, and caching layers in PostgreSQL and MySQL.',
-        'Engineered secure JWT/OAuth2 authentication gateways and role-based access control (RBAC) subsystems.',
-        'Collaborated with frontend and mobile engineers to establish strict OpenAPI/Swagger contracts.',
-      ],
-    },
-  ];
+  {
+    "period": "2020 — PRESENT",
+    "role": "Lead Backend Engineer & Systems Architect",
+    "company": "Luminoguru Pvt Ltd",
+    "location": "Mohali, India",
+    "summary": "Lead backend implementation for enterprise integrations, workforce software and AI application platforms.",
+    "achievements": [
+      "Built multi-tenant X12 EDI middleware with signed AS2 transport and ERP adapters.",
+      "Developed TGA-Mesh workforce services with queued Xero payroll sync and real-time messaging.",
+      "Designed provider-independent AI generation orchestration and image-processing services."
+    ]
+  },
+  {
+    "period": "2019 — 2020",
+    "role": "Backend & Web Developer",
+    "company": "Quadrish Innovations",
+    "location": "Chandigarh, India",
+    "summary": "Developed web backends, relational data models and service integrations.",
+    "achievements": [
+      "Built and maintained REST APIs using PHP frameworks and MySQL.",
+      "Integrated Node.js and MongoDB modules for asynchronous data workflows."
+    ]
+  },
+  {
+    "period": "2017 — 2019",
+    "role": "Software & Mobile Engineer (Trainee to Developer)",
+    "company": "Tuespot Pvt Ltd",
+    "location": "Mohali, India",
+    "summary": "Worked on Android applications and web portal backends.",
+    "achievements": [
+      "Developed Java/XML Android features with SQLite storage and REST integration.",
+      "Contributed PHP/SQL backend features and database schema design."
+    ]
+  }
+];
 
   return (
     <section id="experience" className="py-14 sm:py-20 md:py-28 px-3.5 sm:px-6 md:px-8 max-w-7xl mx-auto relative z-10">
