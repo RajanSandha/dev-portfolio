@@ -94,7 +94,7 @@ This repository hosts the source code for my personal developer portfolio, desig
 ## 📬 Contact &amp; Connect
 
 - **Name:** Raj Kumar
-- **Role:** Associate Software Engineer / Full Stack Developer
+- **Role:** Software Engineer at Luminoguru Pvt Ltd
 - **Location:** Mohali, Punjab, India
 - **Email:** [rajatworkplace@gmail.com](mailto:rajatworkplace@gmail.com)
 - **LinkedIn:** [linkedin.com/in/rajansandha](https://linkedin.com/in/rajansandha)

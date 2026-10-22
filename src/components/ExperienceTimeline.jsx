@@ -4,8 +4,8 @@ import { Calendar, Download, ExternalLink, MapPin } from 'lucide-react';
 export default function ExperienceTimeline() {
   const experiences = [
   {
-    "period": "2020 — PRESENT",
-    "role": "Associate Software Engineer",
+    "period": "DEC 2020 — OCT 2026",
+    "role": "Software Engineer",
     "company": "Luminoguru Pvt Ltd",
     "location": "Mohali, India",
     "summary": "Lead backend implementation for enterprise integrations, workforce software and AI application platforms.",

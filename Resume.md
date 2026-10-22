@@ -27,9 +27,9 @@ Delivery & security: Docker, Git, Linux, AWS S3 / SQS / Secrets Manager, JWT, OA
 
 
 
-### Associate Software Engineer | Luminoguru Pvt Ltd
+### Software Engineer | Luminoguru Pvt Ltd
 
-2020 - PRESENT | Mohali, India
+DEC 2020 - OCT 2026 | Mohali, India
 
 - Built multi-tenant X12 EDI middleware with signed AS2 transport and ERP adapters.
 
