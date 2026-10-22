@@ -1,6 +1,6 @@
 # Raj Kumar
 
-Lead Backend Engineer | Python, TypeScript & AI Applications
+Software Engineer | Python, TypeScript & AI Applications
 
 Mohali, Punjab, India | +91 98350 04000 | rajatworkplace@gmail.com | linkedin.com/in/rajansandha | github.com/RajanSandha | rajansandha.github.io/dev-portfolio
 
