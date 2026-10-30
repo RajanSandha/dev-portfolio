@@ -8,7 +8,7 @@ export default function ExperienceTimeline() {
     "role": "Software Engineer",
     "company": "Luminoguru Pvt Ltd",
     "location": "Mohali, India",
-    "summary": "Lead backend implementation for enterprise integrations, workforce software and AI application platforms.",
+    "summary": "Led backend implementation for enterprise integrations, workforce software and AI application platforms.",
     "achievements": [
       "Built multi-tenant X12 EDI middleware with signed AS2 transport and ERP adapters.",
       "Developed TGA-Mesh workforce services with queued Xero payroll sync and real-time messaging.",

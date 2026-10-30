@@ -1,3 +1,4 @@
+import en from '../locales/en.json';
 import React, { useState, useEffect } from 'react';
 import { ArrowUpRight, Copy, Check, Mail, Phone, Linkedin, Github, Download, ArrowUp } from 'lucide-react';
 
@@ -55,7 +56,7 @@ export default function Footer() {
         </h2>
 
         <p className="text-zinc-400 text-xs sm:text-base md:text-xl max-w-2xl leading-relaxed">
-          Open for Lead Backend Engineer, Systems Architect, or Principal Engineering roles. Available for remote engagement worldwide or on-site discussions in Mohali / Chandigarh.
+          {en.career.availability}
         </p>
       </div>
 
